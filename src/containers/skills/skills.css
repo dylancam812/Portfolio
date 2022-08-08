@@ -1,0 +1,271 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.skillsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeIn 1s ease 0s forwards;
+}
+
+.skillsTextContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 2rem 0 3rem 0;
+}
+
+.skillsText{
+    color: white;
+    font-size: calc(60px + 0.8vw);
+    filter: drop-shadow(0 0 0.1rem grey);
+}
+
+/*.skillsText1{
+    color: white;
+    font-size: 80px;
+    filter: drop-shadow(0 0 0.1rem grey);
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.skillsText2{
+    color: white;
+    font-size: 80px;
+    filter: drop-shadow(0 0 0.1rem grey);
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.skillsText3{
+    color: white;
+    font-size: 80px;
+    filter: drop-shadow(0 0 0.1rem grey);
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-50px);
+}*/
+
+.skillsMenu {
+    position: relative;
+    margin-left: 1rem;
+}
+
+.skillsMenu svg{
+    cursor: pointer;
+    margin-top: .5rem;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+}
+
+.skillsMenu svg:hover{
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+}
+.skillsMenuContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-menu);
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    position: absolute;
+    margin-top: 2rem;
+    left: -290px;
+    min-width: 185px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+    z-index: 11;
+}
+
+.skillsMenuContainer p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.skillsMenuContainer button {
+    background: var(--color-menu);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: 0;
+    margin: 0.3rem 0;
+    cursor: pointer;
+}
+
+.skillsSlider {
+  width: 100%;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.slide img {
+  width: 20rem;
+  margin: 30px auto;
+  height: 60%;
+  width: 60%;
+  aspect-ratio: 1;
+  border: 20px solid white;
+  
+  border-radius: 8px;
+  background: white;
+  object-fit: contain;
+}
+
+.slide {
+  transform: scale(0.2);
+  transition: transform 300ms;
+  opacity: 0.5;
+}
+
+.activeSlide {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.rightArrowImage{
+    height: 40px;
+    width: 40px;
+    margin-right: 1rem;
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, .25);
+    filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, .1));
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.leftArrowImage{
+    height: 40px;
+    width: 40px;
+    margin-left: 1rem;
+    transform: rotate(180deg);
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, .1));
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.arrow svg {
+  transition: color 300ms;
+}
+
+.arrow svg:hover {
+  color: #68edff;
+}
+
+.next {
+  right: 0%;
+  top: 44%;
+}
+
+.prev {
+  left: 0%;
+  top: 44%;
+}
+
+@media screen and (max-width: 1050px) {
+    .next {
+        right: 0%;
+        top: 43.5%;
+    }
+      
+    .prev {
+        left: 0%;
+        top: 43.5%;
+    }
+
+      .rightArrowImage{
+        height: 30px;
+        width: 30px;
+    }
+    
+    .leftArrowImage{
+        height: 30px;
+        width: 30px;
+    }
+
+    .skillsTextContainer{
+        margin: 3rem 0 4rem 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .next {
+        right: 0%;
+        top: 43%;
+    }
+      
+    .prev {
+        left: 0%;
+        top: 43%;
+    }
+
+      .rightArrowImage{
+        height: 25px;
+        width: 25px;
+    }
+    
+    .leftArrowImage{
+        height: 25px;
+        width: 25px;
+    }
+
+    .skillsTextContainer{
+        margin: 4rem 0 5rem 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .next {
+        right: 0%;
+        top: 41.5%;
+    }
+      
+    .prev {
+        left: 0%;
+        top: 41.5%;
+    }
+
+      .rightArrowImage{
+        height: 20px;
+        width: 20px;
+    }
+    
+    .leftArrowImage{
+        height: 20px;
+        width: 20px;
+    }
+
+    .skillsTextContainer{
+        margin: 5rem 0 6rem 0;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
