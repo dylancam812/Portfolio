@@ -67,81 +67,81 @@
 
 .text1 {
     visibility: hidden;
-    animation: .55s showUp forwards;
+    animation: .55s showUp forwards, .56s showUp forwards, .57s showUp forwards;
 }
 
 .text2 {
     visibility: hidden;
-    animation: .65s showUp forwards;
+    animation: .65s showUp forwards, .66s showUp forwards, .67s showUp forwards;
 }
 
 .text3 {
     visibility: hidden;
-    animation: .75s showUp forwards;
+    animation: .75s showUp forwards, .76s showUp forwards, .77s showUp forwards;
 }
 
 .text4 {
     visibility: hidden;
-    animation: 1.15s showUp forwards;
+    animation: 1.15s showUp forwards, 1.16s showUp forwards, 1.17s showUp forwards;
 }
 
 .text5 {
     visibility: hidden;
-    animation: 1.25s showUp forwards;
+    animation: 1.25s showUp forwards, 1.26s showUp forwards, 1.27s showUp forwards;
 }
 .text6 {
     visibility: hidden;
-    animation: 1.4s showUp forwards;
+    animation: 1.4s showUp forwards, 1.41s showUp forwards, 1.42s showUp forwards;
 }
 
 .text7 {
     visibility: hidden;
-    animation: 1.5s showUp forwards;
+    animation: 1.5s showUp forwards, 1.51s showUp forwards, 1.52s showUp forwards;
 }
 
 .text8 {
     visibility: hidden;
-    animation: 1.6s showUp forwards;
+    animation: 1.6s showUp forwards, 1.61s showUp forwards, 1.62s showUp forwards;
 }
 
 .text9 {
     visibility: hidden;
-    animation: 1.7s showUp forwards;
+    animation: 1.7s showUp forwards, 1.71s showUp forwards, 1.72s showUp forwards;
 }
 
 .text10 {
     visibility: hidden;
-    animation: 1.9s showUp forwards;
+    animation: 1.9s showUp forwards, 1.91s showUp forwards, 1.92s showUp forwards;
 }
 
 .text11 {
     visibility: hidden;
-    animation: 2s showUp forwards;
+    animation: 2s showUp forwards, 2.01s showUp forwards, 2.02s showUp forwards;
 }
 
 .text12 {
     visibility: hidden;
-    animation: 2.2s showUp forwards;
+    animation: 2.2s showUp forwards, 2.21s showUp forwards, 2.22s showUp forwards;
 }
 
 .text13 {
     visibility: hidden;
-    animation: 2.3s showUp forwards;
+    animation: 2.3s showUp forwards, 2.31s showUp forwards, 2.32s showUp forwards;
 }
 
 .text14 {
     visibility: hidden;
-    animation: 2.4s showUp forwards;
+    animation: 2.4s showUp forwards, 2.41s showUp forwards, 2.42s showUp forwards;
 }
 
 .text15 {
     visibility: hidden;
-    animation: 2.5s showUp forwards;
+    animation: 2.5s showUp forwards, 2.51s showUp forwards, 2.52s showUp forwards;
 }
 
 .text16 {
     visibility: hidden;
-    animation: 2.6s showUp forwards;
+    animation: 2.6s showUp forwards, 2.61s showUp forwards, 2.62s showUp forwards;
 }
 
 .homeText::after {
