@@ -71,7 +71,7 @@ a {
 
 @media screen and (max-width: 550px) {
   .sectionPadding {
-    padding: 4rem 2rem 0rem 2rem;
+    padding: 4rem 2rem 0 2rem;
   }
 
   .sectionMargin {
