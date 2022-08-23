@@ -257,6 +257,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateY(12px);
 }
 
 .homeImage img {
@@ -335,6 +336,7 @@
     .homeImage {
         align-items: center;
         justify-content: center;
+        transform: translateY(-45px);
     }
 
     .homeContent {
