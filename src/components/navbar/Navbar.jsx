@@ -15,7 +15,6 @@ const Navbar = () => {
   const setColor = () => {
     const { href } = window.location;
     setToggleMenu(true);
-    console.log(href);
     if (href === 'https://dylancamacho.com/') {
       setIsActive1(() => true);
     }
