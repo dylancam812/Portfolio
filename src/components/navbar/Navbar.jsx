@@ -7,69 +7,34 @@ import './navbar.css';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [isActive1, setIsActive1] = useState(true);
+  const [isActive1, setIsActive1] = useState(false);
   const [isActive2, setIsActive2] = useState(false);
   const [isActive3, setIsActive3] = useState(false);
   const [isActive4, setIsActive4] = useState(false);
 
-  const setColor1 = () => {
-    if (!isActive1) {
-      setIsActive1((current) => !current);
+  const setColor = () => {
+    const { href } = window.location;
+    setToggleMenu(true);
+    console.log(href);
+    if (href === 'https://dylancamacho.com/') {
+      setIsActive1(() => true);
     }
-    if (isActive2) {
-      setIsActive2((current) => !current);
+    if (href === 'https://dylancamacho.com/Projects') {
+      setIsActive2(() => true);
     }
-    if (isActive3) {
-      setIsActive3((current) => !current);
+    if (href === 'https://dylancamacho.com/Skills') {
+      setIsActive3(() => true);
     }
-    if (isActive4) {
-      setIsActive4((current) => !current);
-    }
-  };
-
-  const setColor2 = () => {
-    if (!isActive2) {
-      setIsActive2((current) => !current);
-    }
-    if (isActive1) {
-      setIsActive1((current) => !current);
-    }
-    if (isActive3) {
-      setIsActive3((current) => !current);
-    }
-    if (isActive4) {
-      setIsActive4((current) => !current);
+    if (href === 'https://dylancamacho.com/Contact') {
+      setIsActive4(() => true);
     }
   };
-
-  const setColor3 = () => {
-    if (!isActive3) {
-      setIsActive3((current) => !current);
-    }
-    if (isActive1) {
-      setIsActive1((current) => !current);
-    }
-    if (isActive2) {
-      setIsActive2((current) => !current);
-    }
-    if (isActive4) {
-      setIsActive4((current) => !current);
-    }
-  };
-
-  const setColor4 = () => {
-    if (!isActive4) {
-      setIsActive4((current) => !current);
-    }
-    if (isActive1) {
-      setIsActive1((current) => !current);
-    }
-    if (isActive2) {
-      setIsActive2((current) => !current);
-    }
-    if (isActive3) {
-      setIsActive3((current) => !current);
-    }
+  const setTrue = (setIsActive) => {
+    setIsActive1(() => false);
+    setIsActive2(() => false);
+    setIsActive3(() => false);
+    setIsActive4(() => false);
+    setIsActive(() => true);
   };
 
   return (
@@ -91,15 +56,15 @@ const Navbar = () => {
       </div>
       <div className="navbarMenu">
         {toggleMenu
-          ? <RiCloseLine color="#fff" size={27} />
-          : <RiMenu3Line color="#fff" size={27} onMouseEnter={() => setToggleMenu(true)} />}
+          ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
+          : <RiMenu3Line color="#fff" size={27} onClick={() => setColor()} />}
         {toggleMenu && (
         <div className="navbarMenuContainer scaleUpCenter" onMouseLeave={() => setToggleMenu(false)}>
           <div className="navbarMenuLinksContainer">
-            <p className="navbarMenuLinks"><Link to="/" style={{ color: isActive1 ? '#0096FF' : 'white' }} onClick={() => setColor1()}>Home</Link></p>
-            <p className="navbarMenuLinks"><Link to="/Projects" style={{ color: isActive2 ? '#0096FF' : 'white' }} onClick={() => setColor2()}>Projects</Link></p>
-            <p className="navbarMenuLinks"><Link to="/Skills" style={{ color: isActive3 ? '#0096FF' : 'white' }} onClick={() => setColor3()}>Skills</Link></p>
-            <p className="navbarMenuLinks"><Link to="/Contact" style={{ color: isActive4 ? '#0096FF' : 'white' }} onClick={() => setColor4()}>Contact</Link></p>
+            <p className="navbarMenuLinks"><Link to="/" style={{ color: isActive1 ? '#0096FF' : 'white' }} onClick={() => setTrue(setIsActive1)}>Home</Link></p>
+            <p className="navbarMenuLinks"><Link to="/Projects" style={{ color: isActive2 ? '#0096FF' : 'white' }} onClick={() => setTrue(setIsActive2)}>Projects</Link></p>
+            <p className="navbarMenuLinks"><Link to="/Skills" style={{ color: isActive3 ? '#0096FF' : 'white' }} onClick={() => setTrue(setIsActive3)}>Skills</Link></p>
+            <p className="navbarMenuLinks"><Link to="/Contact" style={{ color: isActive4 ? '#0096FF' : 'white' }} onClick={() => setTrue(setIsActive4)}>Contact</Link></p>
           </div>
           <div className="navbarMenuSocials">
             <p className="navbarMenuLogo"><a href="https://github.com/dylancam812" target="_blank" rel="noopener noreferrer" aria-label="Github"><AiFillGithub /></a></p>
