@@ -98,6 +98,7 @@ function Skills() {
   const settings = {
     infinite: true,
     lazyLoad: true,
+    focusOnSelect: true,
     speed: 300,
     slidesToShow: 3,
     centerMode: true,
@@ -115,10 +116,10 @@ function Skills() {
         <h1 className="skillsText">My Skills</h1>
         <div className="skillsMenu">
           {toggleMenu
-            ? <AiOutlineMinus color="#ffff" size={27} onClick={() => setToggleMenu(false)} />
-            : <AiOutlinePlus color="#ffff" size={27} onClick={() => setToggleMenu(true)} />}
+            ? <AiOutlineMinus color="#ffff" size={27} />
+            : <AiOutlinePlus color="#ffff" size={27} onMouseEnter={() => setToggleMenu(true)} />}
           {toggleMenu && (
-          <div className="skillsMenuContainer scaleUpCenter">
+          <div className="skillsMenuContainer scaleUpCenter" onMouseLeave={() => setToggleMenu(false)}>
             <div className="skillsMenuButtonsContainer">
               <p><button className="skillsMenuButtons" type="button" style={{ color: isActive1 ? '#0096FF' : 'white' }} onClick={() => setImage1()}>Languages</button></p>
               <p><button className="skillsMenuButtons" type="button" style={{ color: isActive2 ? '#0096FF' : 'white' }} onClick={() => setImage2()}>Libraries/Frameworks</button></p>
