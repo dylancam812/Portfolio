@@ -16,15 +16,27 @@ const Navbar = () => {
     const { href } = window.location;
     setToggleMenu(true);
     if (href === 'https://dylancamacho.com/') {
+      setIsActive2(() => false);
+      setIsActive3(() => false);
+      setIsActive4(() => false);
       setIsActive1(() => true);
     }
     if (href === 'https://dylancamacho.com/Projects') {
+      setIsActive1(() => false);
+      setIsActive3(() => false);
+      setIsActive4(() => false);
       setIsActive2(() => true);
     }
     if (href === 'https://dylancamacho.com/Skills') {
+      setIsActive1(() => false);
+      setIsActive2(() => false);
+      setIsActive4(() => false);
       setIsActive3(() => true);
     }
     if (href === 'https://dylancamacho.com/Contact') {
+      setIsActive1(() => false);
+      setIsActive2(() => false);
+      setIsActive3(() => false);
       setIsActive4(() => true);
     }
   };
