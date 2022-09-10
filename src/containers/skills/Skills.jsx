@@ -10,13 +10,13 @@ import c from '../../assets/skillsImages/c.webp';
 import html from '../../assets/skillsImages/html.webp';
 import css from '../../assets/skillsImages/css.webp';
 import javaScript from '../../assets/skillsImages/javascript.webp';
-import racket from '../../assets/skillsImages/racket.webp';
+import r from '../../assets/skillsImages/r.webp';
 import sql from '../../assets/skillsImages/sql.webp';
 import matLab from '../../assets/skillsImages/matlab.webp';
-import r from '../../assets/skillsImages/r.webp';
-import php from '../../assets/skillsImages/php.webp';
+import lisp from '../../assets/skillsImages/lisp.webp';
+import haskell from '../../assets/skillsImages/haskell.webp';
 import prolog from '../../assets/skillsImages/prolog.webp';
-import bash from '../../assets/skillsImages/bash.webp';
+import php from '../../assets/skillsImages/php.webp';
 import assembly from '../../assets/skillsImages/assembly.webp';
 import react from '../../assets/skillsImages/react.webp';
 import vue from '../../assets/skillsImages/vue.webp';
@@ -32,7 +32,7 @@ import unity from '../../assets/skillsImages/unity.webp';
 import photoShop from '../../assets/skillsImages/photoshop.webp';
 import arrow from '../../assets/arrow.webp';
 
-const image1 = [python, cSharp, java, cPlusPlus, c, html, css, javaScript, racket, sql, matLab, r, php, prolog, bash, assembly];
+const image1 = [python, cSharp, java, cPlusPlus, c, html, css, javaScript, r, sql, matLab, haskell, lisp, prolog, php, assembly];
 const image2 = [react, vue, numPy, tensorFlow];
 const image3 = [net, git, docker, visualStudio, excel, figma, unity, photoShop];
 
