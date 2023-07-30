@@ -1,0 +1,120 @@
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 1s ease 0s forwards;
+    filter: drop-shadow(0 0 0.5rem white);
+}
+
+.contentContainer {
+    width: 44.938rem;
+    background-color: #25274D;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem 1rem 0 1rem;
+    border-radius: 1rem;
+}
+
+.contactMe {
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 1.875rem;
+}
+
+.formContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-group {
+    padding: 0;
+    color: white;
+    background: transparent;
+    width: 80%;
+    cursor: text;
+    margin-bottom: 1.25rem;
+}
+
+.nameInput, .emailInput, .messageTextArea  {
+    height: 100%;
+    color: white;
+    cursor: text;
+    width: 100%;
+    background-color: transparent;
+    padding: 0.625rem;
+    border: 0.063rem solid white;
+    border-radius: 0.25rem;
+}
+
+.submitButton {
+    padding: 0.625rem 0;
+    color: white;
+    background: transparent;
+    border: 0.063rem solid white;
+    width: 80%;
+    cursor: pointer;
+    margin-top: -0.25rem;
+    transition: .2s;
+}
+
+.submitButton:hover {
+    background-color: var(--color-bg);
+    filter: drop-shadow(0 0 0.25rem white);
+}
+.submitButton:active {
+    color: var(--color-bg);
+    background-color: white;
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
+
+@media screen and (min-width: 93.75rem) {
+    .contentContainer {
+        width: 60%;
+        height: 35.938rem;
+    }
+
+    .contactMe {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 112.5rem) {
+    .contentContainer {
+        width: 70%;
+        height: 50.938rem;
+    }
+
+    .contactMe {
+        font-size: 5rem;
+        margin-bottom: 2.875rem;
+    }
+
+    .nameInput, .emailInput, .messageTextArea  {
+        font-size: 1.5rem;
+    }
+
+    .submitButton {
+        padding: 2rem 0;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 46.938rem) {
+    .contactContainer {
+        width: 100%;
+    }
+    .contentContainer {
+        width: 100%;
+    }
+}
