@@ -1,6 +1,10 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+.fullSkillsContainer {
+    height: 35rem;
+}
+
 .skillsContainer{
     display: flex;
     justify-content: center;

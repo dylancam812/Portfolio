@@ -126,33 +126,35 @@ function Skills() {
 
   /* eslint-disable react/jsx-props-no-spreading */
   return (
-    <div className="skillsContainer" id="skills">
-      <div className="skillsTextContainer">
-        <h1 className="skillsText">My Skills</h1>
-        <div className="skillsMenu">
-          {toggleMenu
-            ? <AiOutlineMinus color="#ffff" size={27} onClick={() => setToggleMenu(false)} />
-            : <AiOutlinePlus color="#ffff" size={27} onClick={() => setToggleMenu(true)} />}
-          {toggleMenu && (
-          <div className="skillsMenuContainer scaleUpCenter" onMouseLeave={() => setToggleMenu(false)}>
-            <div className="skillsMenuButtonsContainer">
-              <p><button className="skillsMenuButtons" type="button" style={{ color: isActive1 ? '#0096FF' : 'white' }} onClick={() => setImage1()}>Languages</button></p>
-              <p><button className="skillsMenuButtons" type="button" style={{ color: isActive2 ? '#0096FF' : 'white' }} onClick={() => setImage2()}>Libraries/Frameworks</button></p>
-              <p><button className="skillsMenuButtons" type="button" style={{ color: isActive3 ? '#0096FF' : 'white' }} onClick={() => setImage3()}>Softwares</button></p>
+    <div className="fullSkillsContainer">
+      <div className="skillsContainer" id="skills">
+        <div className="skillsTextContainer">
+          <h1 className="skillsText">My Skills</h1>
+          <div className="skillsMenu">
+            {toggleMenu
+              ? <AiOutlineMinus color="#ffff" size={27} onClick={() => setToggleMenu(false)} />
+              : <AiOutlinePlus color="#ffff" size={27} onClick={() => setToggleMenu(true)} />}
+            {toggleMenu && (
+            <div className="skillsMenuContainer scaleUpCenter" onMouseLeave={() => setToggleMenu(false)}>
+              <div className="skillsMenuButtonsContainer">
+                <p><button className="skillsMenuButtons" type="button" style={{ color: isActive1 ? '#0096FF' : 'white' }} onClick={() => setImage1()}>Languages</button></p>
+                <p><button className="skillsMenuButtons" type="button" style={{ color: isActive2 ? '#0096FF' : 'white' }} onClick={() => setImage2()}>Libraries/Frameworks</button></p>
+                <p><button className="skillsMenuButtons" type="button" style={{ color: isActive3 ? '#0096FF' : 'white' }} onClick={() => setImage3()}>Softwares</button></p>
+              </div>
             </div>
+            )}
           </div>
-          )}
         </div>
-      </div>
-      <div className="skillsSlider">
-        <Slider {...settings}>
-          {images.map((img, idx) => (
-            <div className={idx === imageIndex ? 'slide activeSlide' : 'slide'} ref={(input) => { inputFile = input; }}>
-              <img src={img} />
-              <p>{labels[idx]}</p>
-            </div>
-          ))}
-        </Slider>
+        <div className="skillsSlider">
+          <Slider {...settings}>
+            {images.map((img, idx) => (
+              <div className={idx === imageIndex ? 'slide activeSlide' : 'slide'} ref={(input) => { inputFile = input; }}>
+                <img src={img} />
+                <p>{labels[idx]}</p>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );

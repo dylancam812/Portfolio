@@ -33,8 +33,8 @@ const Projects = () => (
           <img className="projectImageInternal" src={transformer} />
         </div>
         <h1 className="projectTitle">Transformer Model</h1>
-        <p className="projectDescription">Program was created with PyTorch a PyTorch-based Decoder Transformer
-          Neural Network Model mirroring the structure of GPT-4 and other LLMs. It implements self-attention,
+        <p className="projectDescription">Program was created with PyTorch. It is a decoder transformer
+          neural network model which mirrors the structure of GPT-4 and other popular LLMs. It implements self-attention,
           word/positional encoding, and feed forward layers to generate writings in the style of its input text.
         </p>
         <div className="projectButtonContainer">
