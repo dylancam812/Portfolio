@@ -56,7 +56,7 @@ a {
 }
 
 
-@media screen and (min-width: 93.75rem) {
+@media screen and (min-width: 90rem) {
   body {
     background-size: 100% 100%;
   }
