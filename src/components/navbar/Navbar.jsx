@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiFillFileText } from 'react-icons/ai';
 import navbarLogo from '../../assets/navbarLogo.webp';
 import './navbar.css';
 
@@ -62,13 +62,14 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbarSocials">
-        <p><a href="https://github.com/dylancam812" target="_blank" rel="noopener noreferrer" aria-label="Github"><AiFillGithub /></a></p>
-        <p><a href="https://www.linkedin.com/in/dylan-camacho/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><AiFillLinkedin /></a></p>
+        <p><a className="navbarSocialsGitHub" href="https://github.com/dylancam812" target="_blank" rel="noopener noreferrer" aria-label="Github"><AiFillGithub /></a></p>
+        <p><a className="navbarSocialsLinkedIn" href="https://www.linkedin.com/in/dylan-camacho/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><AiFillLinkedin /></a></p>
+        <p><a className="navbarSocialsResume" href="../../Resume_Dylan_Camacho.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume"><AiFillFileText /></a></p>
       </div>
       <div className="navbarMenu">
         {toggleMenu
-          ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
-          : <RiMenu3Line color="#fff" size={27} onClick={() => setColor()} />}
+          ? <RiCloseLine color="#fff" size={32} onClick={() => setToggleMenu(false)} />
+          : <RiMenu3Line color="#fff" size={32} onClick={() => setColor()} />}
         {toggleMenu && (
         <div className="navbarMenuContainer scaleUpCenter" onMouseLeave={() => setToggleMenu(false)}>
           <div className="navbarMenuLinksContainer">
@@ -78,8 +79,11 @@ const Navbar = () => {
             <p className="navbarMenuLinks"><Link to="/Contact" style={{ color: isActive4 ? '#0096FF' : 'white' }} onClick={() => setTrue(setIsActive4)}>Contact</Link></p>
           </div>
           <div className="navbarMenuSocials">
-            <p className="navbarMenuLogo"><a href="https://github.com/dylancam812" target="_blank" rel="noopener noreferrer" aria-label="Github"><AiFillGithub /></a></p>
-            <p className="navbarMenuLogo"><a href="https://www.linkedin.com/in/dylan-camacho/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><AiFillLinkedin /></a></p>
+            <p className="navbarMenuLogo">
+              <a className="navbarMenuGitHub" href="https://github.com/dylancam812" target="_blank" rel="noopener noreferrer" aria-label="Github"><AiFillGithub /></a>
+              <a className="navbarMenuLinkedIn" href="https://www.linkedin.com/in/dylan-camacho/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><AiFillLinkedin /></a>
+              <a className="navbarMenuResume" href="../../Resume_Dylan_Camacho.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume"><AiFillFileText /></a>
+            </p>
           </div>
         </div>
         )}
