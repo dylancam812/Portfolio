@@ -1,0 +1,285 @@
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 8rem 0rem 8rem;
+    margin-bottom: 6rem;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.projectPlacard {
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.1);
+    margin: 1rem 2rem 0 2rem;
+    flex: 1;
+    border: none;
+    transition: 0.3s ease;
+}
+
+@media screen and (min-width: 30.6875rem) {
+    .projectPlacard:hover {
+        background: var(--color-bg);
+        filter: drop-shadow(0 0 0.5rem white);
+    }
+
+    .projectPlacard:hover .projectImageInternal {
+        opacity: 1;
+        filter: none;
+        mix-blend-mode: none;
+        backdrop-filter: none;
+    }
+}
+
+.projectPlacard.activeMobile {
+    background: var(--color-bg);
+    filter: drop-shadow(0 0 0.5rem white);
+}
+
+.projectPlacard.activeMobile .projectImageInternal {
+    opacity: 1;
+    filter: none;
+    mix-blend-mode: none;
+    backdrop-filter: none;
+}
+
+.projectContentContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectImage {
+    width: 100%;
+    height: 0;
+    padding-top: 58.4462982273%;
+    position: relative;
+}
+
+.projectImageInternal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    filter: brightness(1.2) contrast(0.9) saturate(1.1) blur(1px);
+    opacity: 0.75;
+    mix-blend-mode: lighten;
+}
+
+.projectTitle {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    padding: 0.9rem 0.6rem 0.6rem 0.6rem;
+    filter: drop-shadow(0 0 0.1rem grey);
+}
+
+.projectDescription {
+    text-align: center;
+    font-family: var(--font-family);
+    color: white;
+    padding: 0.6rem 2rem;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    font-size: .8rem;
+    line-height: 1rem;
+    filter: drop-shadow(0 0 0.1rem grey);
+}
+
+.projectButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.6rem 2rem 0.6rem 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    filter: drop-shadow(0 0 0.1rem grey);
+}
+
+.projectButtonLabel {
+    color: white;
+    font-family: var(--font-family);
+    font-size: 1.25rem;
+    transform: translateY(-0.0625rem);
+}
+
+.spacer {
+    color: transparent;
+}
+
+.projectButton {
+    position: relative;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.07);
+    color: white;
+    border-radius: 0.313rem;
+    font-size: 1.875rem;
+    line-height: 1.25rem;
+}
+
+@media (min-height: 28.125rem) and (min-width: 37.563rem) {
+    .projectButton:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -0.125rem;
+        left: -0.125rem;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(0.313rem);
+        width: calc(100% + 0.25rem);
+        height: calc(100% + 0.25rem);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 0.313rem;
+    }
+
+    .projectButton:active {
+        color: var(--color-bg);
+    }
+
+    .projectButton:active:after {
+        background: transparent;
+    }
+
+    .projectButton:hover:before {
+        opacity: 1;
+    }
+
+    .projectButton:hover {
+        cursor: pointer;
+        scale: 1.1;
+    }
+
+    .projectButton:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        left: 0;
+        top: 0;
+        border-radius: 0.313rem;
+    }
+
+    @keyframes glowing {
+        0% { background-position: 0 0; }
+        50% { background-position: 400% 0; }
+        100% { background-position: 0 0; }
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 65.688rem) and (max-width: 93.75rem) {
+    .projectPlacard {
+        max-width: 15.563rem;
+    }
+}
+
+@media screen and (min-width: 79.5rem) {
+    .projectPlacard {
+        min-width: 17.875rem;
+    }
+}
+
+@media screen and (min-width: 93.75rem) and (max-width: 112.5rem) {
+    .projectPlacard {
+        max-width: 21.875rem;
+    }
+
+    .projectButtonLabel {
+        font-size: 1.5625rem;
+        transform: translateY(-0.078125rem);
+    }
+    
+    .projectButton {
+        border-radius: 0.39125rem;
+        font-size: 2.34375rem;
+        line-height: 1.5625rem;
+    }    
+
+    .projectTitle {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        box-shadow: 0 1.25px 0 rgba(255, 255, 255, 0.1);
+        padding: 1.125rem 0.75rem 0.75rem 0.75rem;
+        filter: drop-shadow(0 0 0.125rem grey);
+    }
+    
+    .projectDescription {
+        padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+        box-shadow: 0 1.25px 0 rgba(255, 255, 255, 0.1);
+        font-size: 1rem;
+        line-height: 1.25rem;
+        filter: drop-shadow(0 0 0.125rem grey);
+    }
+}
+
+@media screen and (min-width: 112.5rem) {
+    .projectPlacard {
+        max-width: 30.5rem;
+    }
+
+    .projectButtonLabel {
+        font-size: 1.875rem;
+        transform: translateY(-0.09375rem);
+    }
+    
+    .projectButton {
+        border-radius: 0.4695rem;
+        font-size: 2.8125rem;
+        line-height: 1.875rem;
+    }
+    
+    .projectTitle {
+        font-weight: 600;
+        font-size: 2.4rem;
+        line-height: 3rem;
+        box-shadow: 0 1.5px 0 rgba(255, 255, 255, 0.1);
+        padding: 1.35rem 2.5rem 0.9rem 2.5rem;
+        filter: drop-shadow(0 0 0.15rem grey);
+    }
+    
+    .projectDescription {
+        padding: 0.9rem 3rem 0.9rem 3rem;
+        box-shadow: 0 1.5px 0 rgba(255, 255, 255, 0.1);
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        filter: drop-shadow(0 0 0.15rem grey);
+    }   
+
+    .projectButtonContainer {
+        padding: 0.6rem 4.5rem 0.6rem 4.5rem;
+    }
+    
+    .spacer {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 65.625rem) {
+    .projectContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-between;
+        padding: 0 1rem 3rem 1rem;
+    }
+
+    .projectButtonContainer {
+        justify-content: center;
+    }
+
+    .spacer {
+        width: 30%
+    }
+}

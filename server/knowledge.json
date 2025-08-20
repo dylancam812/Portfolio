@@ -1,0 +1,209 @@
+{
+  "basic_info": {
+    "full_name": "Dylan Paul Camacho",
+    "date_of_birth": "2002-08-12",
+    "hometown": "Greenwich, Connecticut",
+    "early_education": [
+      "Riverside Elementary School",
+      "Eastern Middle School",
+      "Greenwich High School"
+    ],
+    "high_school_highlights": [
+      "Head of the computer science club",
+      "Head of Greenwich Public Library-affiliated club helping seniors with tech",
+      "Graduated in 2020 with distinction in computer science"
+    ]
+  },
+
+  "college": {
+    "institution": "Harvey Mudd College",
+    "location": "Claremont, California",
+    "graduation_year": 2024,
+    "majors": ["Computer Science", "Mathematics"],
+    "honors": [
+      "Graduated with Honors",
+      "Dean’s List every eligible semester"
+    ],
+    "study_abroad": "Universidad Carlos III de Madrid (Spring 2023)",
+    "math_courses": [
+      "Linear Algebra",
+      "Multivariable Calculus",
+      "Differential Equations",
+      "Probability and Statistics",
+      "Discrete Mathematics",
+      "Real Analysis",
+      "Abstract Algebra"
+    ],
+    "cs_courses": [
+      "Operating Systems",
+      "Computability and Logic",
+      "Data Structures and Algorithms",
+      "Machine Learning",
+      "Neural Networks"
+    ]
+  },
+
+  "work_experience": {
+    "note": "More information on my work experience is available in my resume and on my LinkedIn page, both linked in the top right corner of my website.",
+    "entries": [
+      {
+        "title": "Software Engineer (Mid-Level, formerly Associate)",
+        "company": "Costar Group",
+        "location": "Irvine, CA",
+        "dates": "July 2024 – Present",
+        "highlights": [
+          "Refactored favoriting system with observer pattern (60% less complexity)",
+          "Enhanced Homes.com and Apartments.com email system with geographic + ML insights",
+          "Expanded favorites dashboard, built optimized dynamic map UI"
+        ]
+      },
+      {
+        "title": "ASR Clinic Researcher",
+        "company": "NASA Ames",
+        "location": "Mountain View, CA",
+        "dates": "Aug 2023 – May 2024",
+        "highlights": [
+          "Conducted ASR research with NASA scientists",
+          "Designed evaluation app for speech-to-text systems",
+          "Built benchmarking tool for automatic speech recognition"
+        ]
+      },
+      {
+        "title": "Software Engineer Intern",
+        "company": "Costar Group",
+        "location": "Irvine, CA",
+        "dates": "Summer 2023",
+        "highlights": [
+          "Created internal property search tool",
+          "Implemented localization, search, and weather features"
+        ]
+      },
+      {
+        "title": "Software Engineer Intern",
+        "company": "Costar Group",
+        "location": "Irvine, CA",
+        "dates": "Summer 2022",
+        "highlights": [
+          "Contributed to principal Homes.com release (C#, Vue.js, MySQL, .NET)",
+          "Improved product-to-engineering design transfer process"
+        ]
+      },
+      {
+        "title": "IT Technical Assistant",
+        "company": "Harvey Mudd College",
+        "location": "Claremont, CA",
+        "dates": "Sep 2021 – May 2022",
+        "highlights": [
+          "Built and customized PCs for labs",
+          "Configured BIOS, OS installs, troubleshooting",
+          "Automated employee data extraction"
+        ]
+      }
+    ]
+  },
+
+  "skills": {
+    "languages_proficient": [
+      "Python", "C#", "C++", "C", "JavaScript", "TypeScript", "SQL", "HTML", "CSS"
+    ],
+    "languages_academic": [
+      "Java", "R", "MATLAB", "Haskell", "Lisp", "Prolog", "Assembly"
+    ],
+    "libraries_frameworks": ["PyTorch", "Pandas", "NumPy", "Vue.js", "React", "Docker", ".NET"],
+    "tools_platforms": ["Git", "Bash", "AWS", "Snowflake", "Datadog", "Visual Studio", "Excel", "Figma", "Photoshop"],
+    "spoken_languages": ["English", "Spanish"],
+    "strengths": {
+      "Python": "Best for algorithms, DS, AI",
+      "C#": "Best for enterprise/backend",
+      "C++": "Deepest research understanding",
+      "Vue.js": "Most corporate frontend experience",
+      "React": "Most personal project experience"
+    }
+  },
+
+  "projects": {
+    "note": "Details available in the project page of Dylan’s website and GitHub repositories (linked top-right)",
+    "entries": [
+      {
+        "name": "Speech-To-Text Evaluator",
+        "description": "Program was written in C#, React, Python, PostgreSQL and connected to AWS. It was created for NASA scientists to evaluate which AI speech-to-text models worked best in given environments. The application allows users to manage groupings of audio files and examine current and previous performance of models on select audio."
+      },
+      {
+        "name": "Autonomous Racecar",
+        "description": "Program was written in Python using OpenCV and is integrated with a C#, Unity simulator. It directs a racecar to move autonomously through complex courses with varying types of obstacles via a state machine that utilizes environmental data. The data is derived from an emulated LIDAR, IMU, color camera, and depth sensor."
+      },
+      {
+        "name": "Decoder Transformer",
+        "description": "Program was written in PyTorch. It is a decoder transformer neural network model that mirrors the structure of GPT-4 and other popular large language models. It implements self-attention, word encoding, positional encoding, and feed forward layers to generate writings in the style of its input text."
+      }
+    ]
+  },
+
+  "hobbies": {
+    "sports_games": [
+      "Pickup basketball",
+      "Fantasy football (dynasty leagues)",
+      "Chess (daily puzzles)",
+      "Skateboarding (basic tricks)",
+      "Catan (favorite board game)"
+    ],
+    "video_games": "The Legend of Zelda: Tears of the Kingdom (favorite)",
+    "fun_facts": [
+      "Can lick his elbow",
+      "Allergic to dogs, cats, and fish but still wants a pet"
+    ],
+    "favorites": {
+      "color": "Blue",
+      "number": 12,
+      "athletes": ["Lionel Messi", "Kobe Bryant"],
+      "music_genres": ["Reggaeton", "Hip-hop/Rap", "70s Rock", "Alternative/Indie"],
+      "music_artists": ["Kendrick Lamar", "J. Cole", "Bad Bunny", "Bizarrap", "The Beatles", "Jimi Hendrix", "Still Woozy", "Steve Lacy"],
+      "art": {
+        "classical": "Francisco de Goya",
+        "contemporary": "Haruki Murakami",
+        "movement": "Impressionism",
+        "favorite_piece": "The Making of the Perfect Martini by Guy Buffet"
+      },
+      "movies_live_action": ["The Shawshank Redemption", "Whiplash", "A Bronx Tale"],
+      "movies_animated": ["Spider-Man: Across the Spider-Verse", "Fantastic Mr. Fox", "Puss in Boots: The Last Wish"],
+      "director": "Wes Anderson",
+      "youtube": "StatQuest with Josh Starmer (neural networks)",
+      "travel_favorite_city": "New York City"
+    },
+    "food_cooking": "Enjoys experimenting with flavors and exploring new restaurants",
+    "car": "2017 Jeep Patriot (added aftermarket radio + camera)",
+    "happiest_moment": "Watching Argentina win the 2022 World Cup with family",
+    "best_trip": "Connected with NASA collaborators to tour the Johnson Space Center, including the Neutral Buoyancy Lab, where I met astronauts in training."
+  },
+
+  "family": {
+    "siblings": {
+      "brother": {
+        "name": "Justin",
+        "age_diff": 15,
+        "occupation": "Sales",
+        "location": "California"
+      },
+      "sister": {
+        "name": "Natalie",
+        "age_diff": 5,
+        "occupation": "Marketing",
+        "location": "New York"
+      },
+      "shared": "Both siblings went to the University of Wisconsin → Dylan supports UW sports"
+    },
+    "parents": {
+      "father": {
+        "origin": "Ecuador",
+        "alma_mater": "UCLA",
+        "occupation": "Fashion and sales",
+        "teams": ["Ecuador soccer team", "Los Angeles Lakers", "New York Giants", "New York Yankees"]
+      },
+      "mother": {
+        "alma_mater": "University of San Francisco",
+        "occupation": "Interior design",
+        "heritage": "Argentina → Dylan supports Argentina national soccer team"
+      }
+    }
+  }
+}

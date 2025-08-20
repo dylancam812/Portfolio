@@ -1,0 +1,239 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 2rem 6rem;
+}
+
+.navbar-home {
+    position: relative;
+}
+
+.navbarContainer{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbarLogo {
+    margin-right: 2rem;
+    margin-top: .4375rem;
+}
+
+.navbarLogo img {
+    width: 2.75rem;
+    height: 1.6875rem;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.navbarLogo:hover img {
+    transform: rotateY(180deg);
+}
+
+.navbarLinksContainer {
+    margin-top: .25rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbarSocials {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbarSocials p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 2.125rem;
+    line-height: 1.563rem;
+    text-transform: capitalize;
+    margin: 1.25rem .5rem 1rem .5rem;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transform-origin: center center;
+}
+
+.navbarSocialsResume {
+    font-size: 1.9375rem;
+    line-height: 0rem;
+}
+
+.navbarSocialsGitHub {
+    font-size: 1.9375rem;
+    line-height: 0rem;
+}
+
+.navbarSocials p:hover {
+    animation: spinSwing .9s infinite alternate ease-in-out;
+    transform: scale(1.2);
+    filter:
+        drop-shadow(0 0 .15rem #66ccff)
+        drop-shadow(0 0 .15rem #66ccff);
+
+}
+
+.navbarLinksContainer p,
+.navbarMenuContainer p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    text-transform: capitalize;
+    position: relative;
+    display: block;
+
+    margin: 0 1.5rem;
+    cursor: pointer;
+}
+
+.navbarLinksContainer p::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.188rem;
+    top: 100%;
+    left: 0;
+    background: white;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.navbarLinksContainer p:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navbarMenu {
+    margin-left: 0.75rem;
+    margin-top: 0.125rem;
+    display: none;
+    position: relative;
+}
+
+.navbarMenu svg {
+    cursor: pointer;
+}
+
+.navbarMenuContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-menu);
+    padding: 0.75rem 2rem .75rem 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 2.5rem;
+    margin-top: 1rem;
+    min-width: 11.563rem;
+    border-radius: 0.313rem;
+    box-shadow: 0rem 0rem 0.313rem rgba(0,0, 0,0.2);
+    z-index: 11;
+}
+
+.navbarMenuContainer p {
+    margin: 1rem 0;
+}
+
+.navbarMenuSocials {
+    display: none;
+}
+
+.navbarMenuSocials p {
+    font-size: 1.563rem;
+    margin: 0rem -0.125rem 0.8rem 0;
+}
+
+.navbarMenuLinkedIn {
+    margin-left: .875rem;
+}
+
+.navbarMenuResume {
+    margin-left: .875rem;
+}
+
+@keyframes spinSwing {
+    0% {
+        transform: scale(1.2) rotate(-20deg);
+    }
+    100% {
+        transform: scale(1.2) rotate(380deg);
+    }
+}
+
+@media screen and (min-width: 93.75rem) {
+    .navbarLinksContainer p,
+    .navbarMenuContainer p {
+        font-size: 1.625rem;
+        line-height: 2.163rem;
+    }
+
+    .navbarSocials p {
+        font-size: 3.125rem;
+        line-height: 2.163rem;
+        transition: transform 0.2s ease;
+    }
+
+    .navbarSocialsResume {
+        font-size: 2.75rem;
+        line-height: 0rem;
+    }
+
+    .navbarSocialsGitHub {
+        font-size: 2.75rem;
+        line-height: 0rem;
+    }
+
+    .navbarLogo img {
+        width: 4.25rem;
+        height: 2.563rem;
+    }
+    
+    .navbarLinksContainer {
+        margin-top: 0.3125rem;
+    }
+}
+
+@media screen and (max-width: 65.625rem) {
+    .navbarLinksContainer {
+        display: none;
+    }
+
+    .navbarMenu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 43.75rem) {
+    .navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 34.375rem) {
+    .navbar {
+        padding: 2rem;
+    }
+
+    .navbarSocials {
+        display: none;
+    }
+
+    .navbarMenuContainer {
+        top: 1.25rem;
+    }
+
+    .navbarMenuSocials {
+        display: block;
+    }
+}

@@ -1,0 +1,199 @@
+.aboutContainer {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.chatContainer {
+    width: 75vw;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.chatLog {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    overflow: scroll;
+}
+
+.chatMessage {
+    max-width: 70%;
+    padding: .625rem .75rem;
+    border-radius: 1.25rem;
+    line-height: 1.25rem;
+    font-size: .875rem;
+    word-wrap: break-word;
+    margin-bottom: .5rem;
+}
+
+.incoming {
+    align-self: flex-start;
+    color: black;
+    background: linear-gradient(135deg, #f7f7f9, #E5E5EA);
+}
+
+.outgoing {
+    align-self: flex-end;
+    color: white;
+    background: linear-gradient(135deg, #4cc9f0, #03A2E9);
+}
+
+.chatForm {
+    transform: translateY(-35vh);
+}
+
+.afterSubmit {
+    transform: translateY(0);
+}
+
+.textareaWrapper {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  border-radius: 2rem;
+  padding-right: 3.5rem;
+  /* border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.promptInput {
+    width: 100%;
+    padding: 1.125rem 0 1.125rem 1.75rem;
+    resize: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    max-height: 9.75rem;
+    min-height: 3.875rem;
+    border-radius: 2rem 0 0 2rem;
+    transform: translateY(.125rem);
+    border: none;
+    overflow-y: hidden;
+}
+
+.promptInput:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.sendPromptButton {
+    height: 2.25rem;
+    width: 2.25rem;
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 1.0625rem;
+    right: .75rem;
+    transform: translateY(.125rem);
+    background-color: #ccc;
+    border: none;
+    border-radius: 1.25rem;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hasPrompt {
+    background-color: var(--color-bg);
+}
+
+.hasPrompt:hover {
+    background-color: #3b4c6b;
+}
+
+.square {
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: .125rem
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
+
+@media screen and (min-width: 93.75rem) {
+    .textareaWrapper {
+        border-radius: 2.5rem;
+        padding-right: 5rem;
+    }
+
+    .promptInput  {
+        padding: 1.40625rem 0 1.40625rem 2.1875rem;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        max-height: 12.1875rem;
+        min-height: 4.84375rem;
+        border-radius: 2.5rem 0 0 2.5rem;
+    }
+
+    .chatMessage {
+        padding: 0.78125rem 0.9375rem 0.78125rem 0.9375rem;
+        border-radius: 1.5625rem;
+        line-height: 1.5625rem;
+        font-size: 1.09375rem;
+        margin-bottom: 0.625rem;
+    }
+
+    .sendPromptButton {
+        height: 2.8125rem;
+        width: 2.8125rem;
+        font-size: 1.5625rem;
+        bottom: 1.328125rem;
+        right: 0.9375rem;
+        border-radius: 1.5625rem;
+    }
+}
+
+@media screen and (min-width: 112.5rem) {
+    .textareaWrapper {
+        border-radius: 3rem;
+        padding-right: 6rem;
+    }
+
+    .promptInput  {
+        padding: 1.6875rem 0 1.6875rem 2.625rem;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        max-height: 14.625rem;
+        min-height: 5.8125rem;
+        border-radius: 3rem 0 0 3rem;
+    }
+
+    .chatMessage {
+        padding: 0.9375rem 1.125rem 0.9375rem 1.125rem;
+        border-radius: 1.875rem;
+        line-height: 1.875rem;
+        font-size: 1.3125rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .sendPromptButton {
+        height: 3.375rem;
+        width: 3.375rem;
+        font-size: 1.875rem;
+        bottom: 1.59375rem;
+        right: 1.125rem;
+        border-radius: 1.875rem;
+    }
+}
+
+@media screen and (max-width: 46.938rem) {
+    .aboutContainer {
+        width: 100%;
+    }
+    .chatContainer {
+        width: 100%;
+        padding: 0 1rem;
+    }
+}

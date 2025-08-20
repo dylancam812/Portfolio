@@ -1,0 +1,391 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.fullSkillsContainer {
+    height: 35rem;
+}
+
+.skillsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeIn 1s ease 0.1s forwards;
+}
+
+.skillsTextContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 2rem 0 3rem 0;
+}
+
+.skillsText{
+    color: white;
+    font-size: calc(3.75rem + 0.8vw);
+    filter: drop-shadow(0 0 0.1rem grey);
+}
+
+/*.skillsText1{
+    color: white;
+    font-size: 5rem;
+    filter: drop-shadow(0 0 0.1rem grey);
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-3.125rem);
+}
+
+.skillsText2{
+    color: white;
+    font-size: 5rem;
+    filter: drop-shadow(0 0 0.1rem grey);
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-3.125rem);
+}
+
+.skillsText3{
+    color: white;
+    font-size: 5rem;
+    filter: drop-shadow(0 0 0.1rem grey);
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-3.125rem);
+}*/
+
+.skillsMenu {
+    position: relative;
+    margin-left: 1rem;
+}
+
+.skillsMenu svg{
+    background: white;
+    cursor: pointer;
+    margin-top: .5rem;
+    transition: .2s;
+    fill: var(--color-menu);
+    height: 2rem;
+    width: 2rem;
+}
+
+.skillsMenu svg:hover{
+    box-shadow: 0rem 0rem 0.938rem rgba(255, 255, 255, 1);
+}
+.skillsMenuContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-menu);
+    padding: 0.75rem 2.625rem 0.75rem 2.625rem;
+    position: absolute;
+    margin-top: 2rem;
+    left: -19.125rem;
+    min-width: 11.563rem;
+    border-radius: 0.313rem;
+    box-shadow: 0rem 0rem 0.313rem rgba(0,0, 0,0.2);
+    z-index: 11;
+}
+
+.skillsMenuContainer p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    text-transform: capitalize;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.skillsMenuContainer button {
+    background: var(--color-menu);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    border: 0;
+    margin: 0.3rem 0;
+    cursor: pointer;
+}
+
+.skillsSlider {
+  width: 100%;
+  margin: auto;
+  border-radius: 0.5rem;
+}
+
+.slide img {
+  width: 1.25rem;
+  margin: 0.625rem auto;
+  height: 60%;
+  width: 60%;
+  aspect-ratio: 1;
+  border: 1.25rem solid white;
+  
+  border-radius: 0.5rem;
+  background: white;
+  object-fit: contain;
+}
+
+.slide p {
+    text-align: center;
+    color: white;
+}
+
+.activeSlide p {
+    font-size: 2.5rem;
+}
+
+.slide {
+  transform: scale(0.2);
+  transition: transform 300ms;
+  opacity: 0.5;
+}
+
+.activeSlide {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.rightArrowImage {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1rem;
+    margin-top: -.9375rem;
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(1.25rem);
+    -webkit-backdrop-filter: blur(1.25rem);
+    border: 0.063rem solid rgba(255, 255, 255, .25);
+    filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, .1));
+    padding: 0.313rem;
+    border-radius: 0.625rem;
+    transition: .2s;
+}
+
+.leftArrowImage {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: 1rem;
+    margin-top: -.9375rem;
+    transform: rotate(180deg);
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(1.25rem);
+    -webkit-backdrop-filter: blur(1.25rem);
+    border: 0.063rem solid rgba(255, 255, 255, 0.25);
+    filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, .1));
+    padding: 0.313rem;
+    border-radius: 0.625rem;
+    transition: .2s;
+}
+
+.leftArrowImage:hover {
+    box-shadow: 0rem 0rem 0.938rem rgba(255, 255, 255, 1);
+}
+
+.rightArrowImage:hover {
+    box-shadow: 0rem 0rem 0.938rem rgba(255, 255, 255, 1);
+}
+
+.arrow svg {
+  transition: color 300ms;
+}
+
+.arrow svg:hover {
+  color: #68edff;
+}
+
+.next {
+  right: 0%;
+  top: 44%;
+}
+
+.prev {
+  left: 0%;
+  top: 44%;
+}
+
+@media screen and (min-width: 93.75rem) {
+    .rightArrowImage{
+        height: 4.313rem;
+        width: 4.313rem;
+        padding: 0.563rem;
+        margin-top: -1.625rem;
+    }
+    
+    .leftArrowImage{
+        height: 4.313rem;
+        width: 4.313rem;
+        padding: 0.563rem;
+        margin-top: -1.625rem;
+    }
+
+    .slide img {
+        height: 70%;
+        width: 70%;
+      }
+      
+    .activeSlide p {
+        font-size: 3rem;
+      }
+
+    .skillsText{
+        font-size: calc(4.25rem + 0.8vw);
+    }
+
+    .skillsMenu svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: .433rem;
+    }
+
+    .skillsMenuContainer {
+        left: -21.938rem;
+    }
+
+    .skillsMenuContainer button {
+        font-size: 1.433rem;
+        line-height: 2.75rem;
+    }
+}
+
+@media screen and (min-width: 112.5rem) {
+    .rightArrowImage{
+        height: 4.875rem;
+        width: 4.875rem;
+        padding: 0.688rem;
+        margin-top: -2.875rem;
+    }
+    
+    .leftArrowImage{
+        height: 4.875rem;
+        width: 4.875rem;
+        padding: 0.688rem;
+        margin-top: -2.875rem;
+    }
+
+    .slide img {
+        height: 80%;
+        width: 80%;
+      }
+      
+    .activeSlide p {
+        font-size: 5.5rem;
+      }
+
+    .skillsText{
+        font-size: calc(4.75rem + 0.8vw);
+    }
+
+    .skillsMenu svg {
+        width: 3rem;
+        height: 3rem;
+        margin-left: .5rem;
+    }
+
+    .skillsMenuContainer {
+        left: -25.188rem;
+        padding: 0.75rem 3.5rem 0.75rem 3.5rem;
+    }
+
+    .skillsMenuContainer button {
+        font-size: 1.625rem;
+        line-height: 3.375rem;
+    }
+}
+
+@media screen and (max-width: 43.75rem) {
+    .next {
+        right: 0%;
+        top: 43%;
+    }
+      
+    .prev {
+        left: 0%;
+        top: 43%;
+    }
+
+    .rightArrowImage{
+        height: 1.563rem;
+        width: 1.563rem;
+        margin-top: -.8125rem;
+    }
+    
+    .leftArrowImage{
+        height: 1.563rem;
+        width: 1.563rem;
+        margin-top: -.8125rem;
+    }
+
+    .skillsTextContainer{
+        margin: 4rem 0 3rem 0;
+    }
+
+    .activeSlide p {
+        font-size: 2rem;
+    }
+
+    .skillsMenuContainer {
+        left: -17.188rem;
+        padding: 0.5rem 2.75rem 0.5rem 2.75rem;
+    }
+
+    .skillsMenuContainer button {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 34.375rem) {
+    .next {
+        right: 0%;
+        top: 40.5%;
+    }
+      
+    .prev {
+        left: 0%;
+        top: 40.5%;
+    }
+
+    .rightArrowImage{
+        height: 1.25rem;
+        width: 1.25rem;
+        margin-top: -.5rem;
+    }
+    
+    .leftArrowImage{
+        height: 1.25rem;
+        width: 1.25rem;
+        margin-top: -.5rem;
+    }
+
+    .skillsTextContainer{
+        margin: 5rem 0 3rem 0;
+    }
+
+    .activeSlide p {
+        font-size: 1.5rem;
+    }
+
+    .slide img {
+        margin: 0.313rem auto;
+      }
+    
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}

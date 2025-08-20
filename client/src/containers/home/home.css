@@ -1,0 +1,515 @@
+.home {
+    display: flex;
+    flex-direction: row;
+}
+
+.homeContent {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 5rem;
+    margin-top: 2rem;
+}
+
+.homeContent h1 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 4.5625rem;
+    line-height: 5.063rem;
+    letter-spacing: -0.04em;
+}
+
+.homeText,.homeText2 {
+    height: 5.063rem;
+    background: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    width: max-content;
+}
+
+.homeText::before,
+.homeText::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.homeText2::before,
+.homeText2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.text1 {
+    visibility: hidden;
+    animation: .55s showUp forwards;
+}
+
+.text2 {
+    visibility: hidden;
+    animation: .6s showUp forwards;
+}
+
+.text3 {
+    visibility: hidden;
+    animation: .675s showUp forwards;
+}
+
+.text4 {
+    visibility: hidden;
+    animation: .775s showUp forwards;
+}
+
+.text5 {
+    visibility: hidden;
+    animation: .9s showUp forwards;
+}
+
+.text6 {
+    visibility: hidden;
+    animation: 1.025s showUp forwards;
+}
+
+.text7 {
+    visibility: hidden;
+    animation: 1.9s showUp forwards;
+}
+
+.text8 {
+    visibility: hidden;
+    animation: 2s showUp forwards;
+}
+
+.textSpacer {
+    visibility: hidden;
+}
+
+.text9 {
+    visibility: hidden;
+    animation: 2.1s showUp forwards;
+}
+
+.text10 {
+    visibility: hidden;
+    animation: 2.2s showUp forwards;
+}
+
+.text11 {
+    visibility: hidden;
+    animation: 2.3s showUp forwards;
+}
+
+.text12 {
+    visibility: hidden;
+    animation: 2.4s showUp forwards;
+}
+
+.text13 {
+    visibility: hidden;
+    animation: 2.6s showUp forwards;
+}
+
+.text14 {
+    visibility: hidden;
+    animation: 2.7s showUp forwards;
+}
+
+.text15 {
+    visibility: hidden;
+    animation: 2.9s showUp forwards;
+}
+
+.text16 {
+    visibility: hidden;
+    animation: 3s showUp forwards;
+}
+
+.text17 {
+    visibility: hidden;
+    animation: 3.1s showUp forwards;
+}
+
+.text18 {
+    visibility: hidden;
+    animation: 3.2s showUp forwards;
+}
+
+.text19 {
+    visibility: hidden;
+    animation: 3.3s showUp forwards;
+}
+
+
+
+.homeText::after {
+  width: 0.125em;
+  background: white;
+  animation: typewriter6 .6s steps(6) .3s forwards,
+    typewriter2 .4s steps(4) 1.65s forwards,
+    blink 750ms steps(2, start) infinite,
+    blink 0s 2s forwards;
+}
+  
+.homeText2::after {
+    width: 0.125em;
+    background: white;
+    animation: newBg 1.9s,
+    typewriter2 1.3s steps(13) 1.95s forwards,
+    blink 750ms steps(2, start) infinite,
+    blink 0s 5s forwards;
+}
+
+.homeContent p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: white;
+    margin-top: 1.5rem;
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: fadeInUp 1s ease 2.5s forwards;
+}
+
+.resume {
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.resume a {
+    flex: 0.6;
+    width: 100%;
+    min-height: 3.125rem;
+    min-height: 3.125rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 1.813rem;
+    line-height: 2.813rem;
+    text-align: center;
+    background: transparent;
+    padding: 0 1rem;
+    border: 0.063rem solid white;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0.5rem;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(2rem);
+    animation: fadeInUp 1s ease 3s forwards;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.resume a:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -0.125rem;
+    left:-0.125rem;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(0.313rem);
+    width: calc(100% + 0.25rem);
+    height: calc(100% + 0.25rem);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 0.5rem;
+}
+
+.resume a:active {
+    color: var(--color-bg);
+    border: 0;
+}
+
+.resume a:active:after {
+    background: white;
+}
+
+.resume a:hover:before {
+    opacity: 1;
+}
+
+.resume a:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--color-bg);
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    border-radius: 0.5rem;
+}
+
+.homeImage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-0.5rem);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  pointer-events: none;
+  animation: enableHover 1s ease 3.5s forwards;
+  transform: scale(1.2) translateY(5.5%);
+}
+
+.mainImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0;
+  transform: translateY(2rem);
+  animation: fadeInUp 1s ease 3.5s forwards;
+  filter: drop-shadow(0 0 0.5rem rgb(233, 231, 241));
+}
+
+/* Keeps the mask aligned to the head */
+.maskContainer {
+  position: absolute;
+  top: -10%;
+  left: 0%;
+  width: 100%;
+  height: 50%;
+  clip-path: polygon(57% 52%, 59% 55%, 61% 56%, 63% 61%, 70% 61%, 70% 0%, 45% 0%, 45% 57%, 54% 56%, 54% 55%, 55% 52%);
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+  /* background-color: black; */
+}
+
+/* Lightbulb inside the mask */
+.lightbulb {
+  position: absolute;
+  bottom: 5%;
+  left: 52.75%;
+  width: 9%;
+  opacity: 0;
+  transition: transform 0.6s ease, opacity .8s ease, filter .8s ease;
+  pointer-events: none;
+}
+
+/* Hover animation */
+.imageContainer:hover .lightbulb {
+  transform: translateY(-155%);
+  opacity: 1;
+  filter: drop-shadow(0 0 white)
+          drop-shadow(0 0px .05rem yellow)
+          drop-shadow(0 0px .05rem yellow)
+          drop-shadow(0 0 .05rem white)
+          drop-shadow(0 0px .50rem yellow)
+          drop-shadow(0 0px .50rem white);
+}
+
+
+.resumeSpacer {
+    color: transparent;
+}
+
+@keyframes typewriter {
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes typewriter6 {
+    to {
+        left: 60%;
+    }
+}
+
+@keyframes typewriter2 {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+@keyframes newBg {
+    from {background: transparent;}
+    to {background: transparent;}
+}
+
+@keyframes showUp {
+    99% {
+        visibility: hidden;
+      }
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes enableHover {
+    to {
+        pointer-events: auto;
+    }
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@media screen and (min-width: 93.75rem) {
+    .home {
+        margin-top: 3.25rem;
+    }
+
+    .homeContent {
+        margin-top: 2.25rem;
+    }
+    .homeContent h1 {
+        font-size: 5.128125rem;
+        line-height: 5.6964375rem;
+    }
+    .homeText,.homeText2 {
+        height: 5.6964375rem;
+    }
+    .homeContent p {
+        font-size: 1.6875rem;
+        line-height: 1.96875rem;
+        margin-top: 1.6875rem;
+    }  
+
+    .resume a {
+        min-height: 3.515625rem;
+        font-size: 2.039625rem;
+        line-height: 3.164625rem;
+        padding: 0 1.125rem;
+        border-radius: 0.5625rem;
+    }    
+}
+
+@media screen and (min-width: 112.5rem) {
+    .home {
+        margin-top: 7.75rem;
+    }
+
+    .homeContent {
+        margin-right: 6.25rem;
+        margin-top: 2.5rem;
+    }
+    
+    .homeContent h1 {
+        font-size: 5.703125rem;
+        line-height: 6.32875rem;
+    }
+
+    .homeText,.homeText2 {
+        height: 6.32875rem;
+    }
+
+    .homeContent p {
+        font-size: 1.875rem;
+        line-height: 2.1875rem;
+        margin-top: 1.875rem;
+    }
+
+    .resume a {
+        min-height: 3.90625rem;
+        font-size: 2.26625rem;
+        line-height: 3.51625rem;
+        padding: 0 1.25rem;
+        border-radius: 0.625rem;
+    }
+}
+
+@media screen and (max-width: 86.875rem) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .homeContent {
+        align-items: center;
+    }
+    .resume {
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* .homeImage {
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-2.813rem);
+    } */
+
+    .homeContent {
+        margin: 0 0 3rem;
+    }
+
+}
+
+@media screen and (max-width: 40.625rem) {
+    .homeContent h1 {
+        margin-top: 0;
+        font-size: 3rem;
+        line-height: 3.75rem;
+    }
+
+    .homeText,.homeText2 {
+        height: 3.75rem;
+    }
+
+    .homeContent p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 30.625rem) {
+    .homeContent h1 {
+        font-size: 2.25rem;
+        line-height: 3rem;
+    }
+
+    .homeText,.homeText2 {
+        height: 3rem;
+    }
+
+    .homeContent p {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+    .resume a:before {
+        opacity: 1;
+    }
+}
