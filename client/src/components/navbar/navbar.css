@@ -2,8 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    position: sticky;
+    top: 0;
+    z-index: 100;
     padding: 2rem 6rem;
+}
+
+.navbar-home {
+    position: relative;
 }
 
 .navbarContainer{
@@ -15,15 +21,22 @@
 
 .navbarLogo {
     margin-right: 2rem;
-    margin-top: .37rem;
+    margin-top: .4375rem;
 }
 
 .navbarLogo img {
-    width: 2.5rem;
-    height: 1.563rem;
+    width: 2.75rem;
+    height: 1.6875rem;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.navbarLogo:hover img {
+    transform: rotateY(180deg);
 }
 
 .navbarLinksContainer {
+    margin-top: .25rem;
     display: flex;
     flex-direction: row;
 }
@@ -38,16 +51,32 @@
     color: #fff;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 1.625rem;
+    font-size: 2.125rem;
     line-height: 1.563rem;
     text-transform: capitalize;
-
-    margin: 1rem 0.5rem;
+    margin: 1.25rem .5rem 1rem .5rem;
     cursor: pointer;
+    transform: rotate(0deg);
+    transform-origin: center center;
+}
+
+.navbarSocialsResume {
+    font-size: 1.9375rem;
+    line-height: 0rem;
+}
+
+.navbarSocialsGitHub {
+    font-size: 1.9375rem;
+    line-height: 0rem;
 }
 
 .navbarSocials p:hover {
-    color: #25274D;
+    animation: spinSwing .9s infinite alternate ease-in-out;
+    transform: scale(1.2);
+    filter:
+        drop-shadow(0 0 .15rem #66ccff)
+        drop-shadow(0 0 .15rem #66ccff);
+
 }
 
 .navbarLinksContainer p,
@@ -84,7 +113,8 @@
 }
 
 .navbarMenu {
-    margin-left: 1rem;
+    margin-left: 0.75rem;
+    margin-top: 0.125rem;
     display: none;
     position: relative;
 }
@@ -100,7 +130,7 @@
     flex-direction: column;
     text-align: end;
     background: var(--color-menu);
-    padding: 0.5rem 2rem 0.5rem 2rem;
+    padding: 0.75rem 2rem .75rem 1.5rem;
     position: absolute;
     right: 0;
     top: 2.5rem;
@@ -119,9 +149,26 @@
     display: none;
 }
 
-.navbarMenuSocials p{
+.navbarMenuSocials p {
     font-size: 1.563rem;
-    margin: 0 0 .8rem 0;
+    margin: 0rem -0.125rem 0.8rem 0;
+}
+
+.navbarMenuLinkedIn {
+    margin-left: .875rem;
+}
+
+.navbarMenuResume {
+    margin-left: .875rem;
+}
+
+@keyframes spinSwing {
+    0% {
+        transform: scale(1.2) rotate(-20deg);
+    }
+    100% {
+        transform: scale(1.2) rotate(380deg);
+    }
 }
 
 @media screen and (min-width: 93.75rem) {
@@ -132,13 +179,28 @@
     }
 
     .navbarSocials p {
-        font-size: 2.125rem;
+        font-size: 3.125rem;
         line-height: 2.163rem;
+        transition: transform 0.2s ease;
+    }
+
+    .navbarSocialsResume {
+        font-size: 2.75rem;
+        line-height: 0rem;
+    }
+
+    .navbarSocialsGitHub {
+        font-size: 2.75rem;
+        line-height: 0rem;
     }
 
     .navbarLogo img {
-        width: 3.2rem;
-        height: 2.163rem;
+        width: 4.25rem;
+        height: 2.563rem;
+    }
+    
+    .navbarLinksContainer {
+        margin-top: 0.3125rem;
     }
 }
 
