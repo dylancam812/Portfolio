@@ -236,4 +236,12 @@
     .navbarMenuSocials {
         display: block;
     }
+    
+    .navbarLogo img {
+        filter: drop-shadow(1px 1px 1px var(--color-bg));
+    }
+
+    .navbarMenu {
+        filter: drop-shadow(1px 1px 1px var(--color-bg));
+    }
 }

@@ -29,33 +29,6 @@
     filter: drop-shadow(0 0 0.1rem grey);
 }
 
-/*.skillsText1{
-    color: white;
-    font-size: 5rem;
-    filter: drop-shadow(0 0 0.1rem grey);
-    position: absolute;
-    opacity: 0;
-    transform: translateX(-3.125rem);
-}
-
-.skillsText2{
-    color: white;
-    font-size: 5rem;
-    filter: drop-shadow(0 0 0.1rem grey);
-    position: absolute;
-    opacity: 0;
-    transform: translateX(-3.125rem);
-}
-
-.skillsText3{
-    color: white;
-    font-size: 5rem;
-    filter: drop-shadow(0 0 0.1rem grey);
-    position: absolute;
-    opacity: 0;
-    transform: translateX(-3.125rem);
-}*/
-
 .skillsMenu {
     position: relative;
     margin-left: 1rem;

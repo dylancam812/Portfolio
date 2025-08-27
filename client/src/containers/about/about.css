@@ -1,5 +1,5 @@
 .aboutContainer {
-    height: 75vh;
+    height: 75dvh;
     display: flex;
     justify-content: center;
     opacity: 0;
@@ -47,7 +47,7 @@
 }
 
 .chatForm {
-    transform: translateY(-35vh);
+    transform: translateY(-35dvh);
 }
 
 .afterSubmit {
@@ -60,8 +60,6 @@
   background-color: white;
   border-radius: 2rem;
   padding-right: 3.5rem;
-  /* border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .promptInput {

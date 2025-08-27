@@ -43,7 +43,7 @@ function Contact() {
               <input type="email" className="emailInput" placeholder="Email Address" name="email" />
             </div>
             <div className="input-group">
-              <textarea className="messageTextArea" id="" cols="30" rows="8" placeholder="Your message" name="message" />
+              <textarea className="messageTextArea" id="" cols="30" rows={window.innerWidth > 490 ? 8 : 6} placeholder="Your message" name="message" />
             </div>
             <input type="submit" className="submitButton" value="Send Message" />
           </form>

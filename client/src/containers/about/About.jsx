@@ -132,7 +132,7 @@ function About() {
           <div className="promptContainer">
             <div className="textareaWrapper">
               <textarea
-                autoFocus
+                autoFocus={window.innerWidth > 490}
                 name="userMessage"
                 className="promptInput"
                 rows="1"

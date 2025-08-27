@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: space-around;
     padding: 0 8rem 0rem 8rem;
-    margin-bottom: 6rem;
     opacity: 0;
     animation: fadeIn 0.8s ease-out forwards;
 }
@@ -281,5 +280,11 @@
 
     .spacer {
         width: 30%
+    }
+}
+
+@media screen and (max-width: 30.625rem) {
+    .projectContainer {
+        margin-bottom: 6rem;
     }
 }

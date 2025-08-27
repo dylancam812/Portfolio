@@ -67,17 +67,17 @@
 
 .text4 {
     visibility: hidden;
-    animation: .775s showUp forwards;
+    animation: .76s showUp forwards;
 }
 
 .text5 {
     visibility: hidden;
-    animation: .9s showUp forwards;
+    animation: .86s showUp forwards;
 }
 
 .text6 {
     visibility: hidden;
-    animation: 1.025s showUp forwards;
+    animation: .96s showUp forwards;
 }
 
 .text7 {
@@ -212,7 +212,6 @@
     justify-content: center;
     transform: translateY(2rem);
     animation: fadeInUp 1s ease 3s forwards;
-    -webkit-tap-highlight-color: transparent;
 }
 
 .resume a:before {
@@ -255,7 +254,17 @@
     overflow: hidden;
     left: 0;
     top: 0;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem; 
+}
+
+.resume a,
+.resume a:before,
+.resume a:after {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 }
 
 .homeImage {
@@ -287,7 +296,6 @@
   filter: drop-shadow(0 0 0.5rem rgb(233, 231, 241));
 }
 
-/* Keeps the mask aligned to the head */
 .maskContainer {
   position: absolute;
   top: -10%;
@@ -298,10 +306,8 @@
   overflow: hidden;
   pointer-events: none;
   z-index: 2;
-  /* background-color: black; */
 }
 
-/* Lightbulb inside the mask */
 .lightbulb {
   position: absolute;
   bottom: 5%;
@@ -312,18 +318,18 @@
   pointer-events: none;
 }
 
-/* Hover animation */
-.imageContainer:hover .lightbulb {
-  transform: translateY(-155%);
-  opacity: 1;
-  filter: drop-shadow(0 0 white)
-          drop-shadow(0 0px .05rem yellow)
-          drop-shadow(0 0px .05rem yellow)
-          drop-shadow(0 0 .05rem white)
-          drop-shadow(0 0px .50rem yellow)
-          drop-shadow(0 0px .50rem white);
+@media (hover: hover) and (pointer: fine) {
+    .imageContainer:hover .lightbulb {
+    transform: translateY(-155%);
+    opacity: 1;
+    filter: drop-shadow(0px 0px 0px white)
+            drop-shadow(0px 0px 0.05rem yellow)
+            drop-shadow(0px 0px 0.05rem yellow)
+            drop-shadow(0px 0px 0.05rem white)
+            drop-shadow(0px 0px 0.50rem yellow)
+            drop-shadow(0px 0px 0.50rem white);
+    }
 }
-
 
 .resumeSpacer {
     color: transparent;
@@ -463,12 +469,6 @@
         align-items: center;
         justify-content: center;
     }
-
-    /* .homeImage {
-        align-items: center;
-        justify-content: center;
-        transform: translateY(-2.813rem);
-    } */
 
     .homeContent {
         margin: 0 0 3rem;

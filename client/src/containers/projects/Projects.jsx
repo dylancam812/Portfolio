@@ -21,7 +21,7 @@ function Projects() {
         }
       });
     }, {
-      threshold: 0.85,
+      threshold: 0.65,
     });
     placards.forEach((p) => observer.observe(p));
     return () => observer.disconnect();
