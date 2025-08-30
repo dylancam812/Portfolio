@@ -519,18 +519,20 @@
     }
 
     .resume a {
-        box-shadow: 0 0 .5rem .15rem #fff;
+        /* box-shadow: 0 0 .5rem .15rem #fff; */
         border-radius: 0.5rem;
     }
 
     .resume a:before {
         opacity: 1;
-        animation: smallerGlowing 10s linear infinite;
+        animation: smallerGlowing 20s linear infinite;
         border-radius: 0.5rem;
+        opacity: 0;
     }
 
     .resume a:after {
         opacity: 1;
         border-radius: 0.5rem;
+        opacity: 0;
     }
 }
