@@ -391,12 +391,6 @@
     100% { background-position: 0 0; }
 }
 
-@keyframes smallerGlowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 100% 0; }
-    100% { background-position: 0 0; }
-}
-
 @media screen and (min-width: 93.75rem) {
     .home {
         margin-top: 3.25rem;
@@ -524,11 +518,10 @@
 
     .resume a:before {
         opacity: 1;
-        animation: smallerGlowing 20s linear infinite;
+        animation: none;
     }
 
-    .resume {
-        border-radius: 0.5rem;
+    .resume a:after {
+        opacity: 1
     }
-
 }
