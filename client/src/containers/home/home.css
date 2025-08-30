@@ -260,6 +260,7 @@
     border-radius: 0.5rem; 
 }
 
+.resume a:focus,
 .resume a:before,
 .resume a:after {
     -webkit-tap-highlight-color: transparent;
