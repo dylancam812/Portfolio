@@ -195,3 +195,9 @@
         padding: 0 1rem;
     }
 }
+
+@media screen and (max-width: 30.625rem) {
+    .aboutContainer {
+        height: 80dvh;
+    }
+}
