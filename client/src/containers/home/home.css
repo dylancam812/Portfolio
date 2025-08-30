@@ -188,8 +188,16 @@
     flex-direction: row;
 }
 
+.resume:hover {
+    transform: scale(1.01);
+}
+
+.resumeSpacer {
+    width: .5rem;
+}
+
 .resume a {
-    flex: 0.6;
+    flex: 0.67;
     width: 100%;
     min-height: 3.125rem;
     font-family: var(--font-family);
@@ -210,6 +218,7 @@
     justify-content: center;
     transform: translateY(2rem);
     animation: fadeInUp 1s ease 3s forwards;
+    border: none;
 }
 
 .resume a:before {
@@ -218,11 +227,9 @@
     inset: 0;
     border-radius: inherit;
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    background-size: 500%;
+    background-size: 400%;
     z-index: -1;
     filter: blur(0.75rem);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
     animation: glowing 20s linear infinite;
 }
 
@@ -237,6 +244,8 @@
 
 .resume a:hover {
     box-shadow: 0 0 .75rem .4rem #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .resume a:hover:before {
@@ -250,6 +259,11 @@
     inset: 0;
     background: var(--color-bg);
     border-radius: inherit;
+    opacity: 90%;
+}
+
+.resume a:after:hover {
+    opacity: 80%;
 }
 
 .homeImage {
@@ -496,6 +510,10 @@
     .homeContent p {
         font-size: 0.875rem;
         line-height: 1.5rem;
+    }
+
+    .resume a {
+        box-shadow: 0 0 .5rem .2rem #fff;
     }
 
     .resume a:before {
