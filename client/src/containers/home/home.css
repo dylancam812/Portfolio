@@ -525,7 +525,7 @@
 
     .resume a:before {
         opacity: 1;
-        animation: smallerGlowing 20s linear infinite;
+        animation: smallerGlowing 10s linear infinite;
         border-radius: 0.5rem;
         overflow: hidden
     }
