@@ -213,6 +213,8 @@
     transform: translateY(2rem);
     animation: fadeInUp 1s ease 3s forwards;
     -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    outline: none;
 }
 
 .resume a:before {
@@ -256,6 +258,12 @@
     left: 0;
     top: 0;
     border-radius: 0.5rem; 
+}
+
+.resume a:before,
+.resume a:after {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 .homeImage {
