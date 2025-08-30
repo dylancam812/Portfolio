@@ -85,7 +85,7 @@ function About() {
     setInput('');
     setLoading(true);
 
-    fetch('http://localhost:5001/api/chat', {
+    fetch('/api/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ messages: newMessages }),
