@@ -513,12 +513,12 @@
     }
 
     .resume a {
-        box-shadow: 0 0 .5rem .15rem #fff;
+        box-shadow: 0 0 .5rem .2rem #fff;
     }
 
     .resume a:before {
         opacity: 1;
-        background: linear-gradient(45deg, #ff0000, #ff00c8, #7a00ff, #002bff, #00ffd5, #48ff00, #fffb00);
+        background: linear-gradient(45deg, #ff7300, #ff0000, #ff0000, #ff00c8, #7a00ff, #002bff, #00ffd5, #48ff00, #fffb00);
         animation: none;
     }
 
