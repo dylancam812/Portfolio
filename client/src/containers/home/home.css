@@ -527,7 +527,6 @@
         opacity: 1;
         animation: smallerGlowing 10s linear infinite;
         border-radius: 0.5rem;
-        overflow: hidden
     }
 
     .resume a:after {
