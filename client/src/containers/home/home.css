@@ -512,6 +512,10 @@
         line-height: 1.5rem;
     }
 
+    .imageContainer {
+        transform: scale(1.2) translateY(0%);
+    }
+
     .resume a {
         box-shadow: 0 0 .35rem .2rem #fff;
     }
