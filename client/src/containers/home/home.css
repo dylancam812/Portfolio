@@ -178,7 +178,7 @@
     margin-top: 1.5rem;
     opacity: 0;
     transform: translateY(2rem);
-    animation: fadeInUp 1s ease 2.5s forwards;
+    animation: fadeInUp 1s ease 3.5s forwards;
 }
 
 .resume {
@@ -197,8 +197,7 @@
 }
 
 .resume a {
-    flex: 0.67;
-    width: 100%;
+    width: 33.5rem;
     min-height: 3.125rem;
     font-family: var(--font-family);
     font-weight: 500;
@@ -217,7 +216,7 @@
     align-items: center;
     justify-content: center;
     transform: translateY(2rem);
-    animation: fadeInUp 1s ease 3s forwards;
+    animation: fadeInUp 1s ease 4s forwards;
     border: none;
 }
 
@@ -281,7 +280,7 @@
   aspect-ratio: 16 / 9;
   margin: 0 auto;
   pointer-events: none;
-  animation: enableHover 1s ease 3.5s forwards;
+  animation: enableHover 1s ease 4.5s forwards;
   transform: scale(1.2) translateY(5.5%);
 }
 
@@ -291,7 +290,7 @@
   display: block;
   opacity: 0;
   transform: translateY(2rem);
-  animation: fadeInUp 1s ease 3.5s forwards;
+  animation: fadeInUp 1s ease 4.5s forwards;
   filter: drop-shadow(0 0 0.5rem rgb(233, 231, 241));
 }
 
@@ -418,6 +417,7 @@
         line-height: 3.164625rem;
         padding: 0 1.125rem;
         border-radius: 0.5625rem;
+        width: 37.625rem;
     }    
 }
 
@@ -452,6 +452,7 @@
         line-height: 3.51625rem;
         padding: 0 1.25rem;
         border-radius: 0.625rem;
+        width: 42rem;
     }
 }
 
@@ -473,6 +474,7 @@
 
     .resume a {
         flex: none;
+        width: 90%;
     }
 
     .homeContent {
@@ -510,14 +512,20 @@
     .homeContent p {
         font-size: 0.875rem;
         line-height: 1.5rem;
+        margin-top: 1.25rem;
     }
 
     .imageContainer {
         transform: scale(1.2) translateY(0%);
     }
 
+    .resume {
+        margin: 1.75rem 0 1rem;
+    }
+
     .resume a {
         box-shadow: 0 0 .35rem .2rem #fff;
+        width: 87%;
     }
 
     .resume a:before {

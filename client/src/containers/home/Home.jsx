@@ -31,7 +31,7 @@ const Home = () => (
         <span className="text18">a</span>
         <span className="text19">n</span>
       </h1>
-      <p>Full-Stack Software Engineer</p>
+      <p>I&apos;m a Full-Stack Software Engineer</p>
       <div className="resume">
         <a href="../../Resume_Dylan_Camacho.pdf" target="_blank" rel="noopener noreferrer" type="button">Resume<span className="resumeSpacer">_</span>  <AiFillFileText /></a>
       </div>

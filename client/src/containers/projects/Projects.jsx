@@ -71,7 +71,7 @@ function Projects() {
           <h1 className="projectTitle">Decoder Transformer</h1>
           <p className="projectDescription">Program was written in PyTorch. It is a decoder transformer
             neural network model that mirrors the structure of GPT-4 and other popular large language models. It implements self-attention,
-            word encoding, positional encoding, and feed-forward layers to generate writings in the style of its input text.
+            word encoding, positional encoding, and feed-forward layers to generate intelligible text in the style of its input.
           </p>
           <div className="projectButtonContainer">
             <p className="projectButtonLabel">Code:</p><a href="https://github.com/dylancam812/Transformer-Decoder-Model" target="_blank" rel="noopener noreferrer" type="button" className="projectButton"> <AiFillCode /> </a>
