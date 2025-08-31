@@ -18,8 +18,8 @@ function Projects() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         let ratio = entry.intersectionRatio;
-        if (ratio < 0.65) ratio = 0;
-        else ratio = (ratio - 0.65) / 0.35;
+        if (ratio < 0.3) ratio = 0;
+        else ratio = (ratio - 0.3) / 0.7;
         ratio = Math.max(0, Math.min(1, ratio));
         entry.target.style.setProperty('--reveal', String(ratio));
       });
