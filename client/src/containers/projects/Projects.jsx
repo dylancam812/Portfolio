@@ -13,19 +13,16 @@ function Projects() {
     if (typeof window === 'undefined' || window.innerWidth > 490) return undefined;
     const placards = document.querySelectorAll('.projectPlacard');
     if (!placards.length) return undefined;
-    const steps = 20;
-    const thresholds = Array.from({ length: steps + 1 }, (_, i) => i / steps);
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        let ratio = entry.intersectionRatio;
-        ratio = Math.max(0, Math.min(1, ratio));
-        entry.target.style.setProperty('--reveal', String(ratio));
+        if (entry.intersectionRatio >= 0.4) {
+          entry.target.classList.add('activeMobile');
+        } else {
+          entry.target.classList.remove('activeMobile');
+        }
       });
-    }, { threshold: thresholds });
-    placards.forEach((p) => {
-      p.style.setProperty('--reveal', '0');
-      observer.observe(p);
-    });
+    }, { threshold: 0.4 });
+    placards.forEach((p) => observer.observe(p));
     return () => observer.disconnect();
   }, []);
 
