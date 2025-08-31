@@ -15,13 +15,13 @@ function Projects() {
     if (!placards.length) return undefined;
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.intersectionRatio >= 0.4) {
+        if (entry.intersectionRatio >= 0.5) {
           entry.target.classList.add('activeMobile');
         } else {
           entry.target.classList.remove('activeMobile');
         }
       });
-    }, { threshold: 0.4 });
+    }, { threshold: 0.5 });
     placards.forEach((p) => observer.observe(p));
     return () => observer.disconnect();
   }, []);
