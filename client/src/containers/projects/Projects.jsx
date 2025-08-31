@@ -10,20 +10,24 @@ import transformerDemo from '../../assets/transformerDemo.gif';
 
 function Projects() {
   useEffect(() => {
-    if (window.innerWidth > 490) return undefined;
+    if (typeof window === 'undefined' || window.innerWidth > 490) return undefined;
     const placards = document.querySelectorAll('.projectPlacard');
+    if (!placards.length) return undefined;
+    const steps = 20;
+    const thresholds = Array.from({ length: steps + 1 }, (_, i) => i / steps);
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('activeMobile');
-        } else {
-          entry.target.classList.remove('activeMobile');
-        }
+        let ratio = entry.intersectionRatio;
+        if (ratio < 0.65) ratio = 0;
+        else ratio = (ratio - 0.65) / 0.35;
+        ratio = Math.max(0, Math.min(1, ratio));
+        entry.target.style.setProperty('--reveal', String(ratio));
       });
-    }, {
-      threshold: 0.65,
+    }, { threshold: thresholds });
+    placards.forEach((p) => {
+      p.style.setProperty('--reveal', '0');
+      observer.observe(p);
     });
-    placards.forEach((p) => observer.observe(p));
     return () => observer.disconnect();
   }, []);
 

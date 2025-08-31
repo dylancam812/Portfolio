@@ -30,16 +30,23 @@
     }
 }
 
-.projectPlacard.activeMobile {
-    background: var(--color-bg);
-    filter: drop-shadow(0 0 0.5rem white);
-}
+@media screen and (max-width: 30.6875rem) {
+    .projectPlacard {
+        --reveal: 0;
+        background-color: rgba(0, 16, 49, calc(0.07 + 0.93 * var(--reveal)));
+        filter: drop-shadow(0 0 calc(0.5rem * var(--reveal)) white);
+    }
 
-.projectPlacard.activeMobile .projectImageInternal {
-    opacity: 1;
-    filter: none;
-    mix-blend-mode: none;
-    backdrop-filter: none;
+    .projectPlacard .projectImageInternal {
+        opacity: calc(0.75 + 0.25 * var(--reveal));
+        filter: brightness(calc(1.2 - 0.2 * (1 - var(--reveal)))) contrast(calc(0.9 + 0.1 * var(--reveal))) saturate(calc(1.1 - 0.1 * (1 - var(--reveal))));
+        mix-blend-mode: none;
+        backdrop-filter: none;
+    }
+
+    .projectPlacard.activeMobile {
+        --reveal: 1;
+    }
 }
 
 .projectContentContainer {
@@ -116,60 +123,6 @@
     border-radius: 0.313rem;
     font-size: 1.875rem;
     line-height: 1.25rem;
-}
-
-@media (min-height: 28.125rem) and (min-width: 37.563rem) {
-    .projectButton:before {
-        content: '';
-        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-        position: absolute;
-        top: -0.125rem;
-        left: -0.125rem;
-        background-size: 400%;
-        z-index: -1;
-        filter: blur(0.313rem);
-        width: calc(100% + 0.25rem);
-        height: calc(100% + 0.25rem);
-        animation: glowing 20s linear infinite;
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-        border-radius: 0.313rem;
-    }
-
-    .projectButton:active {
-        color: var(--color-bg);
-    }
-
-    .projectButton:active:after {
-        background: transparent;
-    }
-
-    .projectButton:hover:before {
-        opacity: 1;
-    }
-
-    .projectButton:hover {
-        cursor: pointer;
-        scale: 1.1;
-    }
-
-    .projectButton:after {
-        z-index: -1;
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        left: 0;
-        top: 0;
-        border-radius: 0.313rem;
-    }
-
-    @keyframes glowing {
-        0% { background-position: 0 0; }
-        50% { background-position: 400% 0; }
-        100% { background-position: 0 0; }
-    }
 }
 
 @keyframes fadeIn {
