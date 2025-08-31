@@ -44,7 +44,7 @@
   },
 
   "work_experience": {
-    "note": "More information on my work experience is available in my resume and on my LinkedIn page, both linked in the top right corner of my website.",
+    "note": "More information on my work experience is available on my website in my resume (linked in the top-right) and on my LinkedIn page (linked in the top-right)",
     "entries": [
       {
         "title": "Software Engineer (Mid-Level, formerly Associate)",
@@ -118,7 +118,7 @@
   },
 
   "projects": {
-    "note": "Details available in the project page of Dylan’s website and GitHub repositories (linked top-right)",
+    "note": "Details available in the project page of Dylan’s website (linked in the navbar at the top of the website) and GitHub repositories (personal GitHub linked in the top-right)",
     "entries": [
       {
         "name": "Speech-To-Text Evaluator",
