@@ -10,7 +10,7 @@
     ],
     "high_school_highlights": [
       "Head of the computer science club",
-      "Head of Greenwich Public Library-affiliated club helping seniors with tech",
+      "Head of Greenwich Public Library affiliate club which had a program where clubmembers helped seniors with tech",
       "Graduated in 2020 with distinction in computer science"
     ]
   },
@@ -21,7 +21,7 @@
     "graduation_year": 2024,
     "majors": ["Computer Science", "Mathematics"],
     "honors": [
-      "Graduated with Honors",
+      "Graduated with Honors in 2024",
       "Dean’s List every eligible semester"
     ],
     "study_abroad": "Universidad Carlos III de Madrid (Spring 2023)",
@@ -103,18 +103,14 @@
   },
 
   "skills": {
-    "languages_proficient": [
-      "Python", "C#", "C++", "C", "JavaScript", "TypeScript", "SQL", "HTML", "CSS"
-    ],
-    "languages_academic": [
-      "Java", "R", "MATLAB", "Haskell", "Lisp", "Prolog", "Assembly"
-    ],
+    "languages_proficient": ["Python", "C#", "C++", "C", "JavaScript", "TypeScript", "SQL", "HTML", "CSS"],
+    "languages_academic": ["Java", "R", "MATLAB", "Haskell", "Lisp", "Prolog", "Assembly"],
     "libraries_frameworks": ["PyTorch", "Pandas", "NumPy", "Vue.js", "React", "Docker", ".NET"],
     "tools_platforms": ["Git", "Bash", "AWS", "Snowflake", "Datadog", "Visual Studio", "Excel", "Figma", "Photoshop"],
     "spoken_languages": ["English", "Spanish"],
     "strengths": {
-      "Python": "Best for algorithms, DS, AI",
-      "C#": "Best for enterprise/backend",
+      "Python": "Best for data structures, algorithms, AI",
+      "C#": "Best for enterprise and backend",
       "C++": "Deepest research understanding",
       "Vue.js": "Most corporate frontend experience",
       "React": "Most personal project experience"
@@ -140,14 +136,16 @@
   },
 
   "hobbies": {
+    "computer_science": "enjoys creating personal projects and learning new programming concepts",
     "sports_games": [
-      "Pickup basketball",
+      "Pickup basketball (play weekly with coworkers)",
       "Fantasy football (dynasty leagues)",
       "Chess (daily puzzles)",
       "Skateboarding (basic tricks)",
       "Catan (favorite board game)"
     ],
-    "video_games": "The Legend of Zelda: Tears of the Kingdom (favorite)",
+    "video_games": "The Legend of Zelda: Tears of the Kingdom (favorite video game)",
+    "food_cooking": "Enjoys experimenting in the kitchen and exploring new restaurants",
     "fun_facts": [
       "Can lick his elbow",
       "Allergic to dogs, cats, and fish but still wants a pet"
@@ -156,6 +154,8 @@
       "color": "Blue",
       "number": 12,
       "athletes": ["Lionel Messi", "Kobe Bryant"],
+      "sports_teams": ["Los Angeles Lakers", "New York Giants", "Ecuador national soccer team", "Argentina national soccer team", "New York Yankees"],
+      "college_sports_teams": ["Wisconsin Basketball/Football", "UCLA Basketball/Football"],
       "music_genres": ["Reggaeton", "Hip-hop/Rap", "70s Rock", "Alternative/Indie"],
       "music_artists": ["Kendrick Lamar", "J. Cole", "Bad Bunny", "Bizarrap", "The Beatles", "Jimi Hendrix", "Still Woozy", "Steve Lacy"],
       "art": {
@@ -168,9 +168,8 @@
       "movies_animated": ["Spider-Man: Across the Spider-Verse", "Fantastic Mr. Fox", "Puss in Boots: The Last Wish"],
       "director": "Wes Anderson",
       "youtube": "StatQuest with Josh Starmer (neural networks)",
-      "travel_favorite_city": "New York City"
+      "city": "New York City"
     },
-    "food_cooking": "Enjoys experimenting with flavors and exploring new restaurants",
     "car": "2017 Jeep Patriot (added aftermarket radio + camera)",
     "happiest_moment": "Watching Argentina win the 2022 World Cup with family",
     "best_trip": "Connected with NASA collaborators to tour the Johnson Space Center, including the Neutral Buoyancy Lab, where I met astronauts in training."
@@ -190,19 +189,18 @@
         "occupation": "Marketing",
         "location": "New York"
       },
-      "shared": "Both siblings went to the University of Wisconsin → Dylan supports UW sports"
+      "shared": "Both siblings went to the University of Wisconsin"
     },
     "parents": {
       "father": {
-        "origin": "Ecuador",
+        "heritage": "Immigrated from Ecuador",
         "alma_mater": "UCLA",
-        "occupation": "Fashion and sales",
-        "teams": ["Ecuador soccer team", "Los Angeles Lakers", "New York Giants", "New York Yankees"]
+        "occupation": "Fashion and sales"
       },
       "mother": {
         "alma_mater": "University of San Francisco",
         "occupation": "Interior design",
-        "heritage": "Argentina → Dylan supports Argentina national soccer team"
+        "heritage": "Parents immigrated from Argentina"
       }
     }
   }
