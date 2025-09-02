@@ -5,9 +5,9 @@ This is a portfolio website created to showcase my work experiences, projects, a
 
 ## Tech Stack Summary:
 
-**Tech used:** React, Express, OpenAI API, CSS, NPM, NGINX, PM2, Hostinger VPS, Cloudflare
+**Tech used:** React, Express, CSS, OpenAI API, EmailJS, NPM, NGINX, PM2, Hostinger VPS, Cloudflare
 
-The frontend of the site consists of React and CSS. The client code is built and served to an Express backend. The chat feature in the about section uses OpenAI's GPT-4.1 nano API. NPM was used as the package manager, NGINX acts as the reverse proxy, Cloudflare serves as the cdn, and PM2 functions as the daemon process manager. The site is hosted using Hostinger's VPS hosting.
+The frontend of the site consists of React and CSS. The client code is built and served to an Express backend. The chat feature in the about section uses OpenAI's GPT-4.1 nano API. The email feature in the contact section uses EmailJS. NPM was used as the package manager, NGINX acts as the reverse proxy, Cloudflare serves as the cdn, and PM2 functions as the daemon process manager. The site is hosted using Hostinger's VPS hosting.
 
 ## Additional Notes:
 

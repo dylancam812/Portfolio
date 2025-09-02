@@ -22,9 +22,18 @@
     "majors": ["Computer Science", "Mathematics"],
     "honors": [
       "Graduated with Honors in 2024",
-      "Dean’s List every eligible semester"
+      "Made Dean’s List every eligible semester"
     ],
-    "study_abroad": "Universidad Carlos III de Madrid (Spring 2023)",
+    "study_abroad": {
+      "institution": "Universidad Carlos III de Madrid (Spring 2023)",
+      "study_period": "Spring of junior year",
+      "highlights": [
+        "Engaged in cultural exchange with the people of Madrid",
+        "Got the chance to travel to many different countries in Europe",
+        "Gained an appreciation for art from classes taken and museums visited",
+        "Met a lot of new friends from different backgrounds"
+      ]
+    },
     "math_courses": [
       "Linear Algebra",
       "Multivariable Calculus",
@@ -40,6 +49,11 @@
       "Data Structures and Algorithms",
       "Machine Learning",
       "Neural Networks"
+    ],
+    "highlights": [
+      "Dorm President in senior year",
+      "Graded and tutored multiple computer science courses",
+      "Made lifelong friends that shared similar interest in STEM"
     ]
   },
 
@@ -137,18 +151,24 @@
 
   "hobbies": {
     "computer_science": "enjoys creating personal projects and learning new programming concepts",
-    "sports_games": [
-      "Pickup basketball (play weekly with coworkers)",
-      "Fantasy football (dynasty leagues)",
-      "Chess (daily puzzles)",
-      "Skateboarding (basic tricks)",
-      "Catan (favorite board game)"
+    "sports": [
+      "Pickup basketball (plays weekly with coworkers)",
+      "Skateboarding (knows basic tricks and uses it to get from A to B)",
+      "Rugby (played in high school)",
+      "Soccer (played a lot growing up)",
+      "Billiards, ping pong, tennis, pickleball, spikeball, golf, surfing, and swimming (enjoys casually)"
     ],
-    "video_games": "The Legend of Zelda: Tears of the Kingdom (favorite video game)",
-    "food_cooking": "Enjoys experimenting in the kitchen and exploring new restaurants",
+    "casual_games": [
+      "Chess (plays daily puzzles)",
+      "Fantasy football (play in many leagues)",
+      "Catan (favorite board game)",
+      "Minesweeper"
+    ],
+    "cooking": "Enjoys experimenting in the kitchen and exploring new restaurants",
     "fun_facts": [
       "Can lick his elbow",
-      "Allergic to dogs, cats, and fish but still wants a pet"
+      "Allergic to dogs, cats, and fish but still wants a pet",
+      "Loves to meet new people and enjoys the process of making new friends"
     ],
     "favorites": {
       "color": "Blue",
@@ -167,12 +187,15 @@
       "movies_live_action": ["The Shawshank Redemption", "Whiplash", "A Bronx Tale"],
       "movies_animated": ["Spider-Man: Across the Spider-Verse", "Fantastic Mr. Fox", "Puss in Boots: The Last Wish"],
       "director": "Wes Anderson",
+      "video_game": "The Legend of Zelda: Tears of the Kingdom",
+      "food": ["Milanesa", "Arroz con pollo", "New York-style pizza"],
+      "restaurant": "Rubirosa in downtown Manhattan",
       "youtube": "StatQuest with Josh Starmer (neural networks)",
       "city": "New York City"
     },
     "car": "2017 Jeep Patriot (added aftermarket radio + camera)",
     "happiest_moment": "Watching Argentina win the 2022 World Cup with family",
-    "best_trip": "Connected with NASA collaborators to tour the Johnson Space Center, including the Neutral Buoyancy Lab, where I met astronauts in training."
+    "best_trip": "Connected with NASA collaborators to tour the Johnson Space Center, including the Neutral Buoyancy Lab, and met astronauts in training."
   },
 
   "family": {
