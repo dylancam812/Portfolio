@@ -26,6 +26,19 @@
     overflow-y: auto;
 }
 
+.windows .chatLog::-webkit-scrollbar {
+    width: .5rem;
+}
+
+.windows .chatLog::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: .25rem;
+}
+
+.windows .chatLog::-webkit-scrollbar-track {
+    background: transparent;
+}
+
 .chatMessage {
     max-width: 70%;
     padding: .625rem .75rem;

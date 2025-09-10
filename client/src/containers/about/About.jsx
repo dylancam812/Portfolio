@@ -71,6 +71,12 @@ function About() {
     }
   }, [messages]);
 
+  useEffect(() => {
+    if (navigator.userAgent.includes('Windows')) {
+      document.querySelector('#about')?.classList.add('windows');
+    }
+  }, []);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!input.trim()) return;
