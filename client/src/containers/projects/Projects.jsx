@@ -33,8 +33,12 @@ function Projects() {
           <div className="projectImage">
             <img className="projectImageInternal" src={ref} />
           </div>
-          <h1 className="projectTitle">Speech-To-Text Evaluator</h1>
-          <p className="projectDescription">Program was written in C#, React, Python, PostgreSQL and connected to AWS.
+          <h1 className="projectTitle">
+            Speech-To-Text<br />
+            Evaluator
+          </h1>
+          <p className="projectDescription">
+            Program was written in C#, React, Python, PostgreSQL and connected to AWS.
             It was created for NASA scientists to evaluate which AI speech-to-text models worked best in given environments.
             The application allows users to manage groupings of audio files and examine current and previous performance of models on select audio.
           </p>
@@ -50,8 +54,12 @@ function Projects() {
           <div className="projectImage">
             <img className="projectImageInternal" src={racecar} />
           </div>
-          <h1 className="projectTitle">Autonomous Racecar</h1>
-          <p className="projectDescription">Program was written in Python using OpenCV and is integrated with a C#, Unity simulator.
+          <h1 className="projectTitle">
+            Autonomous<br />
+            Racecar
+          </h1>
+          <p className="projectDescription">
+            Program was written in Python using OpenCV and is integrated with a C#, Unity simulator.
             It directs a racecar to move autonomously through complex courses with varying types of obstacles via a state machine that utilizes environmental data.
             The data is derived from an emulated LIDAR, IMU, color camera, and depth sensor.
           </p>
@@ -67,8 +75,12 @@ function Projects() {
           <div className="projectImage">
             <img className="projectImageInternal" src={transformer} />
           </div>
-          <h1 className="projectTitle">Decoder Transformer</h1>
-          <p className="projectDescription">Program was written in PyTorch. It is a decoder transformer
+          <h1 className="projectTitle">
+            Decoder<br />
+            Transformer
+          </h1>
+          <p className="projectDescription">
+            Program was written in PyTorch. It is a decoder transformer
             neural network model that mirrors the structure of GPT-4 and other popular large language models. It implements self-attention,
             word encoding, positional encoding, and feed-forward layers to generate intelligible text in the style of its input.
           </p>
