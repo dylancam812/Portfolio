@@ -28,7 +28,7 @@ function Projects() {
 
   useEffect(() => {
     const equalizeDescriptionHeights = () => {
-      if (window.innerWidth < 1050) {
+      if (window.innerWidth <= 1050) {
         document.querySelectorAll('.projectDescription').forEach((el) => {
           const desc = el;
           desc.style.minHeight = 'auto';
