@@ -26,6 +26,33 @@ function Projects() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const equalizeDescriptionHeights = () => {
+      if (window.innerWidth < 1050) {
+        document.querySelectorAll('.projectDescription').forEach((el) => {
+          const desc = el;
+          desc.style.minHeight = 'auto';
+        });
+        return;
+      }
+      const descriptions = document.querySelectorAll('.projectDescription');
+      descriptions.forEach((el) => {
+        const desc = el;
+        desc.style.minHeight = 'auto';
+      });
+      const maxHeight = Array.from(descriptions).reduce((acc, el) => Math.max(acc, el.scrollHeight), 0);
+      descriptions.forEach((el) => {
+        const desc = el;
+        desc.style.minHeight = `${maxHeight}px`;
+      });
+    };
+    setTimeout(equalizeDescriptionHeights, 0);
+    window.addEventListener('resize', equalizeDescriptionHeights);
+    return () => {
+      window.removeEventListener('resize', equalizeDescriptionHeights);
+    };
+  }, []);
+
   return (
     <div className="projectContainer" id="project">
       <div className="projectPlacard">
