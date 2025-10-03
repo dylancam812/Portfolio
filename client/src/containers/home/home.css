@@ -176,6 +176,7 @@
     line-height: 1.75rem;
     color: white;
     margin-top: 1.5rem;
+    padding-left: .25rem;
     opacity: 0;
     transform: translateY(2rem);
     animation: fadeInUp 1s ease 3.5s forwards;
@@ -184,6 +185,7 @@
 .resume {
     width: 100%;
     margin: 2rem 0 1rem;
+    padding-left: .375rem;
     display: flex;
     flex-direction: row;
 }
@@ -197,7 +199,7 @@
 }
 
 .resume a {
-    width: 33.5rem;
+    width: 32.75rem;
     min-height: 3.125rem;
     font-family: var(--font-family);
     font-weight: 500;
@@ -417,7 +419,7 @@
         line-height: 3.164625rem;
         padding: 0 1.125rem;
         border-radius: 0.5625rem;
-        width: 37.625rem;
+        width: 36.875rem;
     }    
 }
 
@@ -452,7 +454,7 @@
         line-height: 3.51625rem;
         padding: 0 1.25rem;
         border-radius: 0.625rem;
-        width: 42rem;
+        width: 41.125rem;
     }
 }
 
@@ -470,6 +472,7 @@
     .resume {
         align-items: center;
         justify-content: center;
+        padding-left: 0;
     }
 
     .resume a {
@@ -479,6 +482,10 @@
 
     .homeContent {
         margin: 0 0 3rem;
+    }
+
+    .homeContent p {
+        padding-left: 0;
     }
 }
 
