@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import { AiFillGithub, AiFillLinkedin, AiFillFileText } from 'react-icons/ai';
 import navbarLogo from '../../assets/navbarLogo.webp';
+import gradientStars from '../../assets/gradientStars.webp';
 import './navbar.css';
 
 const Navbar = () => {
@@ -34,6 +35,7 @@ const Navbar = () => {
           <p><Link to="/">Home</Link></p>
           <p><Link to="/Projects">Projects</Link></p>
           <p><Link to="/About">About</Link></p>
+          <img src={gradientStars} className="gradientStars" />
           <p><Link to="/Contact">Contact</Link></p>
         </div>
       </div>
@@ -89,6 +91,7 @@ const Navbar = () => {
                 >
                   About
                 </Link>
+                <img src={gradientStars} className="gradientStars" />
               </p>
               <p className="navbarMenuLinks">
                 <Link

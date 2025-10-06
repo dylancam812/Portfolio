@@ -39,6 +39,7 @@
     margin-top: .25rem;
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .navbarSocials {
@@ -112,6 +113,17 @@
     transform-origin: left;
 }
 
+.gradientStars {
+    height: auto;
+    left: 66.5%;
+    pointer-events: none;
+    position: absolute;
+    top: -31%;
+    width: 1.5625rem;
+    z-index: 2;
+    animation: twinkle 4.5s ease-in-out infinite;
+}
+
 .navbarMenu {
     margin-left: 0.75rem;
     margin-top: 0.125rem;
@@ -171,11 +183,40 @@
     }
 }
 
+@keyframes twinkle {
+    0%, 100% {
+        filter: brightness(1) blur(0);
+        opacity: .85;
+        transform: scale(1);
+    }
+    25% {
+        filter: brightness(1.6) blur(.3px);
+        opacity: 1;
+        transform: scale(1.07);
+    }
+    50% {
+        filter: brightness(1.2) blur(.1px);
+        opacity: .95;
+        transform: scale(.97);
+    }
+    75% {
+        filter: brightness(1.5) blur(.2px);
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+
 @media screen and (min-width: 93.75rem) {
     .navbarLinksContainer p,
     .navbarMenuContainer p {
         font-size: 1.625rem;
         line-height: 2.163rem;
+    }
+
+    .gradientStars {
+        left: 67.25%;
+        top: -27%;
+        width: 1.9375rem;
     }
 
     .navbarSocials p {
@@ -211,6 +252,12 @@
 
     .navbarMenu {
         display: flex;
+    }
+
+    .gradientStars {
+        left: 96%;
+        top: -32%;
+        width: 1.5625rem;
     }
 }
 
