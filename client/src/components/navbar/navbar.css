@@ -121,7 +121,7 @@
     top: -31%;
     width: 1.5625rem;
     z-index: 2;
-    animation: twinkle 4.5s ease-in-out infinite;
+    animation: twinkle 8s ease-in-out infinite;
 }
 
 .navbarMenu {
@@ -190,17 +190,17 @@
         transform: scale(1);
     }
     25% {
-        filter: brightness(1.6) blur(.3px);
+        filter: brightness(1.8) blur(.4px);
         opacity: 1;
         transform: scale(1.07);
     }
     50% {
-        filter: brightness(1.2) blur(.1px);
+        filter: brightness(1.1) blur(.1px);
         opacity: .95;
         transform: scale(.97);
     }
     75% {
-        filter: brightness(1.5) blur(.2px);
+        filter: brightness(1.7) blur(.3px);
         opacity: 1;
         transform: scale(1.05);
     }
