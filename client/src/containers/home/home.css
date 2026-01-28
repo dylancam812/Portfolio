@@ -80,11 +80,6 @@
     animation: .96s showUp forwards;
 }
 
-.text6Space {
-    visibility: hidden;
-    animation: 1.05s showUp forwards;
-}
-
 .text7 {
     visibility: hidden;
     animation: 1.9s showUp forwards;
@@ -119,11 +114,6 @@
     animation: 2.4s showUp forwards;
 }
 
-.text12Space {
-    visibility: hidden;
-    animation: 2.5s showUp forwards;
-}
-
 .text13 {
     visibility: hidden;
     animation: 2.6s showUp forwards;
@@ -132,11 +122,6 @@
 .text14 {
     visibility: hidden;
     animation: 2.7s showUp forwards;
-}
-
-.text14Space {
-    visibility: hidden;
-    animation: 2.8s showUp forwards;
 }
 
 .text15 {
@@ -169,7 +154,7 @@
 .homeText::after {
   width: 0.125em;
   background: white;
-  animation: typewriter6 .6s steps(6) .3s forwards,
+  animation: typewriter1 .6s steps(6) .3s forwards,
     typewriter2 .4s steps(4) 1.65s forwards,
     blink 750ms steps(2, start) infinite,
     blink 0s 2s forwards;
@@ -350,15 +335,9 @@
     color: transparent;
 }
 
-@keyframes typewriter {
+@keyframes typewriter1 {
     to {
-        left: 50%;
-    }
-}
-
-@keyframes typewriter6 {
-    to {
-        left: 60%;
+        left: 5.5ch;
     }
 }
 
