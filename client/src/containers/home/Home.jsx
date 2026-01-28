@@ -13,7 +13,8 @@ const Home = () => (
         <span className="text3">l</span>
         <span className="text4">l</span>
         <span className="text5">o</span>
-        <span className="text6">,&nbsp;</span>
+        <span className="text6">,</span>
+        <span className="text6Space">&nbsp;</span>
         <span className="text7">m</span>
         <span className="text8">y</span>
         <span className="textSpacer">.</span>
@@ -22,9 +23,11 @@ const Home = () => (
         <span className="text9">n</span>
         <span className="text10">a</span>
         <span className="text11">m</span>
-        <span className="text12">e&nbsp;</span>
+        <span className="text12">e</span>
+        <span className="text12Space">&nbsp;</span>
         <span className="text13">i</span>
-        <span className="text14">s&nbsp;</span>
+        <span className="text14">s</span>
+        <span className="text14Space">&nbsp;</span>
         <span className="text15">D</span>
         <span className="text16">y</span>
         <span className="text17">l</span>

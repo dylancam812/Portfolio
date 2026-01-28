@@ -80,6 +80,11 @@
     animation: .96s showUp forwards;
 }
 
+.text6Space {
+    visibility: hidden;
+    animation: 1.05s showUp forwards;
+}
+
 .text7 {
     visibility: hidden;
     animation: 1.9s showUp forwards;
@@ -114,6 +119,11 @@
     animation: 2.4s showUp forwards;
 }
 
+.text12Space {
+    visibility: hidden;
+    animation: 2.5s showUp forwards;
+}
+
 .text13 {
     visibility: hidden;
     animation: 2.6s showUp forwards;
@@ -122,6 +132,11 @@
 .text14 {
     visibility: hidden;
     animation: 2.7s showUp forwards;
+}
+
+.text14Space {
+    visibility: hidden;
+    animation: 2.8s showUp forwards;
 }
 
 .text15 {
