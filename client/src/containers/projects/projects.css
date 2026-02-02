@@ -31,10 +31,6 @@
 }
 
 @media screen and (max-width: 30.625rem) {
-    .projectContainer {
-        margin-bottom: 6rem;
-    }
-
     .projectPlacard {
         margin: 1rem 2rem 0;
     }
