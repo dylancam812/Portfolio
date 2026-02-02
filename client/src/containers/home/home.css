@@ -164,7 +164,7 @@
     .homeText::after {
         width: 0.125em;
         background: white;
-        animation: typewriter1 .6s steps(6) .35s forwards,
+        animation: typewriter1 .6s steps(6) .3s forwards,
             typewriter2 .4s steps(4) 1.65s forwards,
             blink 750ms steps(2, start) infinite,
             blink 0s 2s forwards;
