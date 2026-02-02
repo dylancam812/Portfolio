@@ -356,7 +356,7 @@
 @supports (-webkit-touch-callout: none) {
     @keyframes typewriter1 {
         to {
-            left: calc(6ch + 0.3em); /* Increased offset for iOS */
+            left: calc(6ch);
         }
     }
 }
