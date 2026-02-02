@@ -356,7 +356,7 @@
 @supports (-webkit-touch-callout: none) {
     @keyframes typewriter1 {
         to {
-            left: calc(6ch);
+            left: calc(5.5ch);
         }
     }
 }
